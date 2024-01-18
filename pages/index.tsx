@@ -1,6 +1,7 @@
 import MarqueeSlider from "@/components/MarqueeSlider";
 import Navbar from "@/components/Navbar";
 import OurServices from "@/components/OurServices";
+import OurWork from "@/components/OurWork";
 import Video from "@/components/Video";
 import Head from "next/head";
 
@@ -20,7 +21,7 @@ export default function Home() {
         <MarqueeSlider></MarqueeSlider>
       </section>
       <section className="mt-[320px]">
-
+        <OurWork></OurWork>
       </section>
       <section className="mt-[320px]">
         <OurServices></OurServices>
