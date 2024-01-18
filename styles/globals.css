@@ -17,5 +17,20 @@ body{
 }
 
 p{
-  font-size: "20px"
+  font-size:20px;
 }
+
+h1{
+  font-size:110px;
+  position: relative;
+}
+
+h1.Ourwork::after{
+  content: "1";
+  font-size:26px;
+  position: absolute;
+  top:0;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
