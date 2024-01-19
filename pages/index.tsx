@@ -1,3 +1,5 @@
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import MarqueeSlider from "@/components/MarqueeSlider";
 import Navbar from "@/components/Navbar";
 import OurServices from "@/components/OurServices";
@@ -25,6 +27,12 @@ export default function Home() {
       </section>
       <section className="mt-[320px]">
         <OurServices></OurServices>
+      </section>
+      <section>
+        <Contact></Contact>
+      </section>
+      <section className="mt-[150px]">
+        <Footer></Footer>
       </section>
     </div>
   )
