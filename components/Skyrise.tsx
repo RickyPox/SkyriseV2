@@ -17,16 +17,15 @@ useEffect(() =>{
             markers: true,
             end:"+=500",
             scrub: true,
-            toggleActions: "restart pause reverse pause"
+            pinSpacing: true,
         },
     })
 }, [])
 
-
     return(
-        <div className="flex justify-center">
+        <div className="flex justify-center bg-red-300">
             <h1 className="text-[200px] skyrise">
-                <span className="s">S</span>
+                <span className="s translate-y-[50%]">S</span>
                 <span className="k">k</span>
                 <span className="y">y</span>
                 <span className="r">R</span>
