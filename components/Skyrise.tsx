@@ -8,20 +8,38 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Skyrise(){
 
     
-useEffect(() =>{
-    gsap.to(".s", {
-        scrollTrigger: {
-            pin:true,
-            trigger:".skyrise",
-            start:"top top",
+    useEffect(() => {
+        const animateS = gsap.to(".s", {
+          scrollTrigger: {
+            pin: true,
+            trigger: ".skyrise",
+            start: "top top",
             markers: true,
-            end:"+=500",
+            end: "+=300",
             scrub: true,
             pinSpacing: true,
-        },
-        y:300,
-    })
-}, [])
+          },
+          y: 300,
+        });
+    
+        // Encadeando a animação do 'K' após a animação do 'S'
+        animateS.then(() => {
+          gsap.to(".k", {
+            scrollTrigger: {
+              pin: true,
+              trigger: ".skyrise",
+              start: "top top", // Ajuste conforme necessário
+              markers: { startColor: "#FFFFFF" },
+              end: "+=300",
+              scrub: true,
+              pinSpacing: true,
+            },
+            y: 300,
+          });
+        });
+      }, []);
+        
+
 
     return(
         <div className="flex justify-center bg-red-300">
