@@ -24,7 +24,7 @@ export default function Skyrise(){
         const tl = gsap.timeline({
             scrollTrigger: {
                         pin: true,
-                        trigger: ".skyrise",
+                        trigger: ".trigger",
                         start: "top top",
                         end: "+=1500",
                         scrub: 1,
@@ -57,8 +57,8 @@ export default function Skyrise(){
 
 
     return(
-        <div className="flex justify-center items-center bg-red-300 min-h-screen">
-            <h1 className="text-[200px] skyrise overflow-hidden">
+        <div className="flex justify-center items-center bg-[#1D1D1D] min-h-screen trigger">
+            <h1 className="text-[200px] overflow-hidden">
                 <span className="s inline-block">S</span>
                 <span className="k inline-block up">k</span>
                 <span className="y inline-block up">y</span>
