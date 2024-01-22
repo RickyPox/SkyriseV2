@@ -33,7 +33,7 @@ export default function Skyrise(){
                     },
         })
         tl.to(".k", {
-            y: "100%"
+            y: "100%",
         })
         tl.to(".y", {
             y: "100%"
@@ -57,7 +57,7 @@ export default function Skyrise(){
 
 
     return(
-        <div className="flex justify-center items-center bg-red-300 pb-[1500px]">
+        <div className="flex justify-center items-center bg-red-300 py-[500px]">
             <h1 className="text-[200px] skyrise overflow-hidden">
                 <span className="s inline-block">S</span>
                 <span className="k inline-block up">k</span>
