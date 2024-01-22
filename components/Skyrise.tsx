@@ -8,26 +8,56 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Skyrise(){
 
     useEffect(() => {
-        gsap.to(".up", {
+        // gsap.to(".up", {
+        //     scrollTrigger: {
+        //         pin: true,
+        //         trigger: ".skyrise",
+        //         start: "top top",
+        //         end: "+=1500",
+        //         scrub: true,
+        //         pinSpacing: true,
+        //         markers: true,
+        //     },
+        //     stagger:0.5,
+        //     y: 300,
+        // }); 
+        const tl = gsap.timeline({
             scrollTrigger: {
-                pin: true,
-                trigger: ".skyrise",
-                start: "top top",
-                end: "+=1500",
-                scrub: true,
-                pinSpacing: true,
-                markers: true,
-            },
-            stagger:0.5,
-            y: 300,
-        }); 
+                        pin: true,
+                        trigger: ".skyrise",
+                        start: "top top",
+                        end: "+=1500",
+                        scrub: 1,
+                        pinSpacing: true,
+                        markers: true,
+                    },
+        })
+        tl.to(".k", {
+            y: "100%"
+        })
+        tl.to(".y", {
+            y: "100%"
+        })
+        tl.to(".i", {
+            y: "100%"
+        })
+        tl.to(".s2", {
+            y: "100%"
+        })
+        tl.to(".e", {
+            y: "100%"
+        })
+        tl.to(".s", {
+            x:200,
+            delay:2
+        })
 
 
         }, []);
 
 
     return(
-        <div className="flex justify-center bg-red-300">
+        <div className="flex justify-center items-center bg-red-300 pb-[1500px]">
             <h1 className="text-[200px] skyrise overflow-hidden">
                 <span className="s inline-block">S</span>
                 <span className="k inline-block up">k</span>
