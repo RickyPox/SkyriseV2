@@ -9,7 +9,7 @@ export default function Skyrise(){
 
     
 useEffect(() =>{
-    gsap.to(".skyrise", {
+    gsap.to(".s", {
         scrollTrigger: {
             pin:true,
             trigger:".skyrise",
@@ -19,19 +19,36 @@ useEffect(() =>{
             scrub: true,
             pinSpacing: true,
         },
+        y:300,
     })
+    gsap.to(".k", {
+        scrollTrigger: {
+            pin:true,
+            trigger:".skyrise",
+            start:"top top",
+            markers:{
+                startColor: "#FFFFFF",
+                endColor: "#FFF123"
+            },
+            end:"+=500",
+            scrub: true,
+            pinSpacing: true,
+        },
+        y:300,
+    })
+
 }, [])
 
     return(
         <div className="flex justify-center bg-red-300">
-            <h1 className="text-[200px] skyrise">
-                <span className="s translate-y-[50%]">S</span>
-                <span className="k">k</span>
-                <span className="y">y</span>
-                <span className="r">R</span>
-                <span className="i">i</span>
-                <span className="s2">s</span>
-                <span className="e">e</span>
+            <h1 className="text-[200px] skyrise overflow-hidden">
+                <span className="s inline-block">S</span>
+                <span className="k inline-block">k</span>
+                <span className="y inline-block">y</span>
+                <span className="r inline-block">R</span>
+                <span className="i inline-block">i</span>
+                <span className="s2 inline-block">s</span>
+                <span className="e inline-block">e</span>
             </h1>
         </div>
     )
