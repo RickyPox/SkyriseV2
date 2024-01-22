@@ -4,6 +4,7 @@ import MarqueeSlider from "@/components/MarqueeSlider";
 import Navbar from "@/components/Navbar";
 import OurServices from "@/components/OurServices";
 import OurWork from "@/components/OurWork";
+import Skyrise from "@/components/Skyrise";
 import Video from "@/components/Video";
 import Head from "next/head";
 
@@ -15,6 +16,9 @@ export default function Home() {
       </Head>
       <section className="my-[60px] ml-[100px]">
         <Navbar></Navbar>
+      </section>
+      <section>
+        <Skyrise></Skyrise>
       </section>
       <section>
         <Video></Video>
