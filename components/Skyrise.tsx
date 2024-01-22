@@ -11,32 +11,34 @@ export default function Skyrise(){
 
         let tl = gsap.timeline();
         tl.to(".s", {
-          scrollTrigger: {
-            pin: true,
-            trigger: ".skyrise",
-            start: "top top",
-            markers: true,
-            end: "+=300",
-            scrub: true,
-            pinSpacing: true,
-          },
-          y: 300,
-        }); 
-
-        tl.to(".k", {
             scrollTrigger: {
-              pin: true,
-              trigger: ".skyrise",
-              start: "top top",
-              markers: true,
-              end: "+=300",
-              scrub: true,
-              pinSpacing: true,
+                pin: true,
+                trigger: ".skyrise",
+                start: "top top",
+                markers: true,
+                end: "+=300",
+                scrub: true,
+                pinSpacing: true,
+            },
+            onComplete : () => {
+                tl.to(".k", {
+                    scrollTrigger: {
+                        pin: true,
+                        trigger: ".skyrise",
+                        start: "top top",
+                        markers: true,
+                        end: "+=300",
+                        scrub: true,
+                        pinSpacing: true,
+                    },
+                    y: 300,
+                    
+                    }); 
             },
             y: 300,
-          }); 
+        }); 
         
-      }, []);
+        }, []);
 
 
     return(
