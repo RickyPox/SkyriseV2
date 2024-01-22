@@ -8,36 +8,21 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Skyrise(){
 
     useEffect(() => {
-
-        let tl = gsap.timeline();
-        tl.to(".s", {
+        gsap.to(".up", {
             scrollTrigger: {
                 pin: true,
                 trigger: ".skyrise",
                 start: "top top",
-                markers: true,
-                end: "+=300",
+                end: "+=1500",
                 scrub: true,
                 pinSpacing: true,
+                markers: true,
             },
-            onComplete : () => {
-                tl.to(".k", {
-                    scrollTrigger: {
-                        pin: true,
-                        trigger: ".skyrise",
-                        start: "top top",
-                        markers: true,
-                        end: "+=300",
-                        scrub: true,
-                        pinSpacing: true,
-                    },
-                    y: 300,
-                    
-                    }); 
-            },
+            stagger:0.5,
             y: 300,
         }); 
-        
+
+
         }, []);
 
 
@@ -45,12 +30,12 @@ export default function Skyrise(){
         <div className="flex justify-center bg-red-300">
             <h1 className="text-[200px] skyrise overflow-hidden">
                 <span className="s inline-block">S</span>
-                <span className="k inline-block">k</span>
-                <span className="y inline-block">y</span>
+                <span className="k inline-block up">k</span>
+                <span className="y inline-block up">y</span>
                 <span className="r inline-block">R</span>
-                <span className="i inline-block">i</span>
-                <span className="s2 inline-block">s</span>
-                <span className="e inline-block">e</span>
+                <span className="i inline-block up">i</span>
+                <span className="s2 inline-block up">s</span>
+                <span className="e inline-block up">e</span>
             </h1>
         </div>
     )
