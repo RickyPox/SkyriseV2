@@ -21,22 +21,6 @@ useEffect(() =>{
         },
         y:300,
     })
-    gsap.to(".k", {
-        scrollTrigger: {
-            pin:true,
-            trigger:".skyrise",
-            start:"top top",
-            markers:{
-                startColor: "#FFFFFF",
-                endColor: "#FFF123"
-            },
-            end:"+=500",
-            scrub: true,
-            pinSpacing: true,
-        },
-        y:300,
-    })
-
 }, [])
 
     return(
