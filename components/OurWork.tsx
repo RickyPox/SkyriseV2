@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {Pagination, Navigation} from 'swiper/modules';
+import {Pagination, Navigation, Autoplay} from 'swiper/modules';
 import 'swiper/css/bundle';
 
 export default function OurWork(){
@@ -13,11 +13,12 @@ export default function OurWork(){
             </div>
             <div>
                 <Swiper
-                slidesPerView={2}
-                spaceBetween={50}
+                autoplay ={true}
+                slidesPerView={4}
+                spaceBetween={20}
                 loop = {true}
                 centeredSlides={true}
-                modules={[Pagination]}
+                modules={[Pagination, Autoplay]}
                 pagination={{ 
                     el: "#bulletContainer",
                     bulletClass:"swipper-bullet-custom-pagination",
@@ -39,6 +40,19 @@ export default function OurWork(){
                     <SwiperSlide>
                         <img className='w-full' src="/YugaLabs.png"></img>
                     </SwiperSlide>
+                    <SwiperSlide>
+                        <img className='w-full' src="/YugaLabs.png"></img>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className='w-full' src="/YugaLabs.png"></img>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className='w-full' src="/YugaLabs.png"></img>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className='w-full' src="/YugaLabs.png"></img>
+                    </SwiperSlide>
+
                 </Swiper>
                 <div id="bulletContainer" className='flex gap-[10px] justify-center mt-[60px]'></div>
             </div>
