@@ -57,7 +57,7 @@ export default function Skyrise(){
 
 
     return(
-        <div className="flex justify-center items-center bg-red-300 py-[500px]">
+        <div className="flex justify-center items-center bg-red-300 min-h-screen">
             <h1 className="text-[200px] skyrise overflow-hidden">
                 <span className="s inline-block">S</span>
                 <span className="k inline-block up">k</span>
