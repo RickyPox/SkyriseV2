@@ -7,9 +7,10 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function Skyrise(){
 
-    
     useEffect(() => {
-        const animateS = gsap.to(".s", {
+
+        let tl = gsap.timeline();
+        tl.to(".s", {
           scrollTrigger: {
             pin: true,
             trigger: ".skyrise",
@@ -20,25 +21,22 @@ export default function Skyrise(){
             pinSpacing: true,
           },
           y: 300,
-        });
-    
-        // Encadeando a animação do 'K' após a animação do 'S'
-        animateS.then(() => {
-          gsap.to(".k", {
+        }); 
+
+        tl.to(".k", {
             scrollTrigger: {
               pin: true,
               trigger: ".skyrise",
-              start: "top top", // Ajuste conforme necessário
-              markers: { startColor: "#FFFFFF" },
+              start: "top top",
+              markers: true,
               end: "+=300",
               scrub: true,
               pinSpacing: true,
             },
             y: 300,
-          });
-        });
-      }, []);
+          }); 
         
+      }, []);
 
 
     return(
