@@ -25,6 +25,8 @@ export default function OurServices(){
     const [opacity, setOpacity] = useState([1, 0.5, 0.5]); // Initial opacity state
     const [expandedText, setExpandedText] = useState(null); // ExpandServiceText
     const [rotateMore, setRotateMore] = useState(0);
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
 
 const handleMouseEnter = (index:any) => {
   // Set opacity to 1 for the hovered service, and 0.5 for the rest
@@ -38,24 +40,26 @@ const handleMouseLeave = () => {
 const handleTextExpand = (index:any) => {
     setExpandedText(expandedText === index ? null : index);
     setRotateMore(rotateMore === 90 ? 0 : 90);
-
 };
+
+const toggleModal = () => {
+    setIsModalVisible(!isModalVisible);
+}
 
 return(
     <div>
-        <div>
-            <ServicesModal></ServicesModal>
+        <div className="">
+            <ServicesModal isVisible={isModalVisible} onClose={toggleModal}></ServicesModal>
         </div>
-        <div>
+        <div className="mx-[100px]">
             <h1 className="Ourservice">Our Services</h1>
             <p className="w-1/3">Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
                 Nullam eget diam nec est facilisi faucibus. 
                 Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin proin.
             </p>
-        
-        <div className="flex mt-[30px]">
-            <Button color="#FEFEFE" title="Get to Know Us"></Button>
-        </div>
+            <div onClick={toggleModal} className="flex mt-[30px]">
+                <Button  color="#FEFEFE" title="Get to Know Us"></Button>
+            </div>
         </div>
         <div className="flex flex-col gap-[200px] mt-[70px]">
             {services.map((service, index) =>(
