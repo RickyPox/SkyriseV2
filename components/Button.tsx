@@ -9,7 +9,7 @@ export default function Button (props:any){
             color: props.color
          }}>{props.title}</p>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1.16805 20L0 18.832L17.1028 1.69657H1.33766V0H20V18.6623H18.3034V2.89724L1.16805 20Z" fill={props.color}/>
+        <path d="M1.16805 20L0 18.832L17.1028 1.69657H1.33766V0H20V18.6623H18.3034V2.89724L1.16805 20Z" fill={props.color ? props.color : "#FEFEFE"}/>
         </svg>
     </div>
     )

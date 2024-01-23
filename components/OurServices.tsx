@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import { useState } from "react";
 import {motion} from "framer-motion"
+import ServicesModal from "./ServicesModal";
 
 const services=[
     {
@@ -43,6 +44,9 @@ const handleTextExpand = (index:any) => {
 return(
     <div>
         <div>
+            <ServicesModal></ServicesModal>
+        </div>
+        <div>
             <h1 className="Ourservice">Our Services</h1>
             <p className="w-1/3">Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
                 Nullam eget diam nec est facilisi faucibus. 
@@ -50,7 +54,7 @@ return(
             </p>
         
         <div className="flex mt-[30px]">
-            <Button color="#FEFEFE" title="Get to Know"></Button>
+            <Button color="#FEFEFE" title="Get to Know Us"></Button>
         </div>
         </div>
         <div className="flex flex-col gap-[200px] mt-[70px]">
