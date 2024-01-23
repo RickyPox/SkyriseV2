@@ -42,13 +42,16 @@ const handleTextExpand = (index:any) => {
 
 return(
     <div>
-        <h1 className="Ourservice">Our Services</h1>
-        <p className="w-1/3">Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
-            Nullam eget diam nec est facilisi faucibus. 
-            Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin proin.
-        </p>
+        <div>
+            <h1 className="Ourservice">Our Services</h1>
+            <p className="w-1/3">Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
+                Nullam eget diam nec est facilisi faucibus. 
+                Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin proin.
+            </p>
+        
         <div className="flex mt-[30px]">
-        <Button title="Get to Know"></Button>
+            <Button color="#FEFEFE" title="Get to Know"></Button>
+        </div>
         </div>
         <div className="flex flex-col gap-[200px] mt-[70px]">
             {services.map((service, index) =>(

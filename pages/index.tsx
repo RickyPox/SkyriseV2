@@ -26,13 +26,13 @@ export default function Home() {
       <section>
         <MarqueeSlider></MarqueeSlider>
       </section>
-      <section className="mt-[320px]">
+      <section className="mt-[320px] ">
         <OurWork></OurWork>
       </section>
-      <section className="mt-[320px]">
+      <section className="mt-[320px] mx-[100px]">
         <OurServices></OurServices>
       </section>
-      <section>
+      <section className="mt-[300px] mx-[100px]">
         <Contact></Contact>
       </section>
       <section className="mt-[150px]">
