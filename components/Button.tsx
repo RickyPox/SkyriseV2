@@ -1,7 +1,7 @@
 export default function Button (props:any){
 
     return(
-        <div className={`flex gap-[20px] border-[1px] rounded-[70px] ${props.size === "big" ? "py-[100px] px-[140px]" : "py-[30px] px-[100px]"}`}
+        <div className={`flex gap-[20px] border-[1px] rounded-[70px] justify-center ${props.size === "big" ? "py-[100px] px-[140px]" : "py-[30px] sm:px-[100px] px-[30px]"}`}
         style={{ 
             border: `solid 1px ${props.color}`
          }}>

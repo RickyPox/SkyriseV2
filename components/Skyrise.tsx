@@ -33,7 +33,6 @@ export default function Skyrise(){
                         end: "+=500",
                         scrub: 1,
                         pinSpacing: true,
-                        markers: true,
                         onEnter: () => {
                             setShow(true)
                         },
@@ -70,7 +69,7 @@ export default function Skyrise(){
 
     return(
         <motion.div className="flex justify-center items-center bg-[#1D1D1D] min-h-screen trigger">
-            <motion.h1 className="text-[200px] overflow-hidden px-[300px]">
+            <motion.h1 className="2xl:text-[200px] md:text-[120px] overflow-hidden 2xl:px-[300px] md:px-[150px] sm:text-[60px] sm:px-[80px] text-[50px] px-[60px]">
                 <motion.span layout className="s inline-block">S</motion.span>
                 <span className={`k ${show ? "inline-block" : "hidden"}`}>k</span>
                 <span className={`y ${show ? "inline-block" : "hidden"}`}>y</span>

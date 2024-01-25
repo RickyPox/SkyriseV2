@@ -21,25 +21,25 @@ export default function Home() {
       <section>
         <Skyrise></Skyrise>
       </section>
-      <section>
-        <Video></Video>
-      </section>
-      <section>
-        <MarqueeSlider></MarqueeSlider>
-      </section>
-      <section className="mt-[320px] ">
-        <OurWork></OurWork>
-      </section>
-      <section className="mt-[320px] relative">
-        <OurServices></OurServices>
-        
-      </section>
-      <section className="mt-[300px] mx-[100px]">
-        <Contact></Contact>
-      </section>
-      <section className="mt-[150px]">
-        <Footer></Footer>
-      </section>
+     <section>
+      <Video></Video>
+    </section>
+    <section>
+      <MarqueeSlider></MarqueeSlider>
+    </section>
+    <section className="mt-[320px] ">
+      <OurWork></OurWork>
+    </section>
+   <section className="mt-[320px] relative">
+      <OurServices></OurServices>
+      
+    </section>
+     <section className="mt-[300px] lg:mx-[100px] mx-[30px]">
+      <Contact></Contact>
+    </section>
+    <section className="mt-[150px] lg:mx-[100px] mx-[30px]">
+      <Footer></Footer>
+    </section>  
     </div>
   )
 }

@@ -17,11 +17,11 @@ body{
 }
 
 p{
-  font-size:20px;
+  font-size:14px;
 }
 
 h1{
-  font-size:110px;
+  font-size:36px;
   position: relative;
 }
 
@@ -34,7 +34,6 @@ h1.Ourwork::after{
   font-size:26px;
   position: absolute;
   top:0;
-  margin-top: 50px;
   margin-left: 20px;
 }
 
@@ -43,7 +42,6 @@ h1.Ourservice::after{
   font-size:26px;
   position: absolute;
   top:0;
-  margin-top: 50px;
   margin-left: 20px;
 }
 
@@ -52,7 +50,6 @@ h1.Contact::after{
   font-size:26px;
   position: absolute;
   top:0;
-  margin-top: 50px;
   margin-left: 20px;
 }
 
@@ -75,4 +72,59 @@ h1.Contact::after{
   background-color: #FEFEFE;
   transition: all ease-in-out 0.25s;
 
+}
+
+
+/* RESPONSIVENESS */
+
+@media (min-width: 768px) {
+  h1{
+    font-size:80px;
+    position: relative;
+  }
+
+  p{
+    font-size:20px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  h1{
+    font-size:110px;
+    position: relative;
+  }
+
+  p{
+    font-size:20px;
+  }
+
+  h1.Ourwork::after{
+    content: "1";
+    font-size:26px;
+    position: absolute;
+    top:0;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  
+  h1.Ourservice::after{
+    content: "2";
+    font-size:26px;
+    position: absolute;
+    top:0;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  
+  h1.Contact::after{
+    content: "3";
+    font-size:26px;
+    position: absolute;
+    top:0;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  
+  
 }
