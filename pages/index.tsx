@@ -2,6 +2,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MarqueeSlider from "@/components/MarqueeSlider";
 import Navbar from "@/components/Navbar";
+import OurNetwork from "@/components/OurNetwork";
 import OurServices from "@/components/OurServices";
 import OurWork from "@/components/OurWork";
 import ServicesModal from "@/components/ServicesModal";
@@ -32,7 +33,9 @@ export default function Home() {
     </section>
    <section className="mt-[320px] relative">
       <OurServices></OurServices>
-      
+    </section>
+    <section>
+      <OurNetwork></OurNetwork>
     </section>
      <section className="mt-[300px] lg:mx-[100px] mx-[30px]">
       <Contact></Contact>

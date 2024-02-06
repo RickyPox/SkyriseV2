@@ -14,6 +14,7 @@ body{
   background-color: #101010;
   color: #FEFEFE;
   font-family: "ClashDisplay-Medium", sans-serif;
+  overflow-x: hidden!important;
 }
 
 p{
@@ -45,7 +46,7 @@ h1.Ourservice::after{
   margin-left: 20px;
 }
 
-h1.Contact::after{
+h1.Ournetwork::after{
   content: "3";
   font-size:26px;
   position: absolute;
@@ -53,6 +54,13 @@ h1.Contact::after{
   margin-left: 20px;
 }
 
+h1.Contact::after{
+  content: "4";
+  font-size:26px;
+  position: absolute;
+  top:0;
+  margin-left: 20px;
+}
 
 .swipper-bullet-custom-pagination{
   background-color: #858484;
@@ -61,6 +69,7 @@ h1.Contact::after{
   display: flex;
   transition: all ease-in-out 0.25s;
 }
+
 .swipper-bullet-custom-pagination-active{
   background-color: #FEFEFE;
   width: 50px;
@@ -68,11 +77,48 @@ h1.Contact::after{
   display: flex;
   transition: all ease-in-out 0.25s;
 }
+
 .swipper-bullet-custom-pagination:hover{
   background-color: #FEFEFE;
   transition: all ease-in-out 0.25s;
+}
+
+.slick-track{
+  display: flex!important;
+  align-items: flex-end!important;
 
 }
+
+.slick-dots li button::before{
+  content: ""!important;
+}
+
+.slick-dots li{
+  background-color: #FEFEFE!important;
+  width: 20px;
+  height: 3px!important;
+  padding: 0!important;
+  border-radius: 0!important;
+  margin-top: 20px;
+  opacity: 0.5;
+  display: block!important;
+}
+
+.slick-slide{
+  margin: 0 10px;
+}
+
+.slick-dots{
+  display: flex!important;
+  justify-content: center!important;
+
+}
+
+ .slick-dots .slick-active{
+  opacity: 1!important;
+  width: 50px!important;
+}
+
 
 
 /* RESPONSIVENESS */
@@ -116,9 +162,18 @@ h1.Contact::after{
     margin-top: 50px;
     margin-left: 20px;
   }
+
+  h1.Ournetwork::after{
+    content: "3";
+    font-size:26px;
+    position: absolute;
+    top:0;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
   
   h1.Contact::after{
-    content: "3";
+    content: "4";
     font-size:26px;
     position: absolute;
     top:0;
