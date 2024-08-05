@@ -1,19 +1,23 @@
-import OurWorkSlider from "./OurWorkSlider";
+import WorkItem from "./WorkItem";
 
 
 export default function OurWork(){
-
     return(
         <div>
-            <div className='mb-[150px] lg:mx-[100px] mx-[30px]'>
-                <h1 className="Ourwork">Our Work</h1>
-                <p className="lg:w-1/3">Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
+            <div className='gridLayout'>
+                <h1 className="col-start-4 col-span-3 text-center">Our Work</h1>
+                <p className="col-start-4 col-span-3 text-center">Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
                     Nullam eget diam nec est facilisi faucibus. 
                     Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin proin.</p>
             </div>
-            <OurWorkSlider></OurWorkSlider>
-
-
+            <div className="gridLayout pt-[120px]">
+                <div className="col-span-3"><WorkItem img="/StreamFlow.png" hoverImg="/FlashTrade.png"></WorkItem></div>
+                <div className="col-span-3"><WorkItem img="/StreamFlow.png" hoverImg="/FlashTrade.png"></WorkItem></div>
+                <div className="col-span-3"><WorkItem img="/StreamFlow.png" hoverImg="/FlashTrade.png"></WorkItem></div>
+                <div className="col-span-3"><WorkItem img="/StreamFlow.png" hoverImg="/FlashTrade.png"></WorkItem></div>
+                <div className="col-span-3"><WorkItem img="/StreamFlow.png" hoverImg="/FlashTrade.png"></WorkItem></div>
+                <div className="col-span-3"><WorkItem img="/StreamFlow.png" hoverImg="/FlashTrade.png"></WorkItem></div>
+            </div>
         </div>
     )
 }

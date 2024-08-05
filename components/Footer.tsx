@@ -1,8 +1,11 @@
 export default function Footer(){
     return(
-        <div className="flex justify-between">
-            <p className="text-[16px] text-[#7B7B7B] uppercase">SKYRISELABS.IO</p>
-            <p className="text-[16px] text-[#7B7B7B] uppercase">@SKYRISELABS</p>
+        <div className="gridLayout">
+            <div className="col-start-3 col-span-5 h-[1px] bg-[#FDFDFD]"/>
+            <div className="col-start-3 col-span-5 flex justify-between">
+                <p className="nav">SKYRISELABS.IO</p>
+                <p className="nav">@SKYRISELABS</p>
+            </div>
         </div>
     )
 }
