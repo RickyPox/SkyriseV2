@@ -31,13 +31,13 @@ export default function OurWork(){
             </div>
             <div 
             className="gridLayout grid pt-[120px]">
-                <WorkItem img="/StreamFlow.png"></WorkItem>
+                <WorkItem img="/Streamflow.png"></WorkItem>
                 <WorkItem img="/Metaplex.png"></WorkItem>
                 <WorkItem img="/SolanaFoundation.png"></WorkItem>
                 <WorkItem img="/Brave.png"></WorkItem>
                 <WorkItem img="/FlashTrade.png"></WorkItem>
                 <WorkItem img="/Solayer.png"></WorkItem>
-                <WorkItem img="/MtnDao.png"></WorkItem>
+                <WorkItem img="/Mtndao.png"></WorkItem>
                 <WorkItem img="/IslandDao.png"></WorkItem>
             </div>
 
