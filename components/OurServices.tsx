@@ -1,9 +1,13 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
+import { motion, useInView } from "framer-motion";
+import styled from "styled-components";
+import PlusSign from "./PlusSign";
 
 export default function OurServices(){
 
   const [hoverIndex, setHoverIndex] = useState(null);
 
+  
   const handleMouseEnter = (index:any) => {
     setHoverIndex(index);
   };
@@ -30,27 +34,54 @@ export default function OurServices(){
     },
   ]
 
+  const title=useRef(null)    
+  const titleInView = useInView(title, { once: true });
+
+  const content=useRef(null)
+  const contentInView = useInView(content, { once: true });
+
 return(
     <div>
-        <div className='gridLayout'>
-          <h1 className="col-start-4 col-span-3 text-center">Our Services</h1>
-          <p className="col-start-4 col-span-3 text-center">Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
+        <div className='gridLayout grid relative'>
+          <motion.h1 
+          ref={title} 
+          initial={{ opacity:0, scale:0}}
+          animate={ titleInView? { opacity:1, scale:1 } : {}} 
+          transition={{ duration:0.5 }}
+          className="col-start-2 col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-start-4 2xl:col-span-3 text-center">Our Services</motion.h1>
+            <motion.p
+            ref={title} 
+            initial={{ opacity:0, scale:0}}
+            animate={ titleInView? { opacity:1, scale:1 } : {}} 
+            transition={{ duration:0.5, delay:0.2 }}
+            className="col-start-1 col-span-full 425:col-start-2 425:col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-start-4 2xl:col-span-3 text-center">
+              Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
               Nullam eget diam nec est facilisi faucibus. 
-              Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin proin.</p>
+              Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin proin.
+            </motion.p>
+
+            <PlusSign/>
+            <PlusSign positon="right"/>
+
         </div>
-        <div className="gridLayout pt-[120px]">
+        <motion.div 
+          ref={content} 
+          initial={{ opacity:0, scale:0}}
+          animate={ contentInView ? { opacity:1, scale:1 } : {}} 
+          transition={{ duration:0.5 }}
+        className="gridLayout pt-[120px] flex flex-col 425:grid">
           {services.map((item, i) =>(
               <div  
-              onMouseEnter={() => handleMouseEnter(i)}
-              onMouseLeave={handleMouseLeave} key={i} className={`flex flex-col items-center justify-center col-span-3 mb-[60px]`} style={{ gridColumnStart: i%2 ? "6" : "2" }}>
-                <div className={`w-[30px] h-[30px] rounded-full flex items-center justify-center border-[#FDFDFD] border-[1px] ${hoverIndex === i ? "bg-[#FDFDFD] text-[#050505]" : ""}`}>
-                  <p>0{i+1}</p>
-                </div>
-                <h2>{item.title}</h2>
-                <p>{item.text}</p>
+                onMouseEnter={() => handleMouseEnter(i)}
+                onMouseLeave={handleMouseLeave} key={i} className={` flex flex-col gap-[10px] items-center justify-center mb-[60px] text-center col-start-1 col-span-full 425:col-start-2 425:col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-span-3 2xl:${i%2 === 0 ? "col-start-2" : "col-start-6"}`}>
+                  <div className={`w-[30px] h-[30px] rounded-full flex items-center justify-center border-[#FDFDFD] border-[1px] hoverTransition ${hoverIndex === i ? "bg-[#FDFDFD] text-[#050505]" : ""}`}>
+                    <p>0{i+1}</p>
+                  </div>
+                  <h2>{item.title}</h2>
+                  <p>{item.text}</p>
               </div>
           ))}
-        </div>
+        </motion.div>
     </div>
   )
 }

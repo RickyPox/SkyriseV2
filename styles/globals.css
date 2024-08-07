@@ -11,29 +11,11 @@ body{
   overflow-x: hidden!important;
 }
 
-p.nav{
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-p{
-  font-size:14px;
-  line-height: 125%;
-}
-
-.gridLayout{
-  display: grid;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
-  gap:20px;
-  margin: auto 100px;
-}
 
 h1{
   font-family:"neue-haas-grotesk-display";
   font-weight: 400;
-  font-size: 75px;
+  font-size: clamp(1.875rem, 0.591rem + 6.42vw, 4.7rem	);
   text-transform: uppercase;
   letter-spacing: -2px;
   line-height: 100%;
@@ -42,7 +24,101 @@ h1{
 h2{
   font-family:"neue-haas-grotesk-display";
   font-weight: 400;
-  font-size: 35px;
+  font-size: clamp(1.5rem, 1.3182rem + 0.909vw, 1.9rem);
   letter-spacing: -1px;
   line-height: 125%;
+}
+
+p{
+  font-size:clamp(0.75rem, 0.6818rem + 0.341vw, 0.9rem);
+  line-height: 125%;
+}
+
+p.nav{
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  transition-duration: 0.2s;
+}
+
+p.nav:hover{
+  opacity: 0.2;
+  transition-duration: 0.2s;
+}
+
+.gridLayout{
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap:20px;
+  margin: auto 20px;
+}
+
+.hoverTransition{
+  transition: all 0.3s ease-in-out;
+}
+
+.WorkItem-imageTransition{
+  filter: invert(100%);
+}
+
+
+.blink{
+  -webkit-animation: blink 5s ease-out infinite normal;
+  animation: blink 5s ease-out infinite normal;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+
+
+@media (min-width: 1024px){
+  h1{
+    font-size: 75px;
+  }
+
+  h2{
+    font-size: clamp(1.875rem, 1.5038rem + 0.58vw, 2.2rem	);
+  }
+  
+  p{
+    font-size:14px;
+  }
+
+}
+
+
+@media (min-width: 1536px){
+
+  h2{
+    font-size: 35px;
+  }
+  .gridLayout{
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap:20px;
+    margin: auto 100px;
+  }
+  
+
 }

@@ -31,7 +31,7 @@ export default function Home() {
      <section className="mt-[200px]">
       <Contact></Contact>
     </section>
-    <section className="mt-[300px] mb-[100px]">
+    <section className="mt-[140px] mb-[100px]">
       <Footer></Footer>
     </section>  
     </div>
