@@ -2,37 +2,23 @@ import Marquee from "react-fast-marquee";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react"
 
-export default function MarqueeSlider (){
+export default function MarqueeSlider (props:any){
 
-
+    const marquee=["/Metaplex.png","/SolanaFoundation.png","/Brave.png","/FlashTrade.png","/Solayer.png","/Mtndao.png","/IslandDao.png"]
 
     return(
         <div>
             <Marquee
             autoFill
             speed={50}
-            style={{ marginTop:"50px" }}>
-                <img className="mx-[25px]" src="/marqueeSlider/Anybodies.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/BnbChain.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/Brave.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/Cardinal.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/Clutchy.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/MagicEden.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/Solana.png"></img>
+            direction={props.direction}>
+                {marquee.map((img, i)=>(
+                    <div className="w-[25vw] mx-[5vw] my-[2vw] lg:mx-[25px] lg:my-[12px] max-w-[190px]">
+                        <img  src={img}></img>
+                    </div>
+                ))}
             </Marquee>
-            <Marquee
-            autoFill
-            speed={50}
-            direction="right"
-            style={{ marginTop:"50px" }}>
-                <img className="mx-[25px]" src="/marqueeSlider/Anybodies.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/BnbChain.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/Brave.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/Cardinal.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/Clutchy.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/MagicEden.png"></img>
-                <img className="mx-[25px]" src="/marqueeSlider/Solana.png"></img>
-            </Marquee>
+
         </div>
     )
 }

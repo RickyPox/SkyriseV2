@@ -10,8 +10,8 @@ export default function PlusSign(props:any){
     return(
         <motion.div 
         ref={view} 
-        initial={{ opacity:0, scale:0}}
-        animate={ inView? { opacity:1, scale:1 } : {}} 
+        initial={{ opacity:0, }}
+        animate={ inView? { opacity:1,  } : {}} 
         transition={{ duration:0.5 }}
         className="blink absolute top-0" style={props.positon === "right" ? {right:0} : {left:0}}>
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -9,8 +9,8 @@ export default function Video (){
 
     return(
         <motion.div ref={view} 
-        initial={{ opacity:0, scale:0}}
-        animate={ inView? { opacity:1, scale:1 } : {}} 
+        initial={{ opacity:0}}
+        animate={ inView? { opacity:1} : {}} 
         transition={{ duration:0.5 }}
         className="bg-[#151515] flex justify-center lg:items-center items-end h-[800px] py-[30px]">
             <div>

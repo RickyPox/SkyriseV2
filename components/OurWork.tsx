@@ -14,14 +14,14 @@ export default function OurWork(){
             <div className='gridLayout grid relative'>
                 <motion.h1 
                 ref={title} 
-                initial={{ opacity:0, scale:0}}
-                animate={ titleInView? { opacity:1, scale:1 } : {}} 
+                initial={{ opacity:0, }}
+                animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5 }}
                 className="col-start-2 col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-start-4 2xl:col-span-3 text-center">Our Work</motion.h1>
                 <motion.p 
                 ref={title} 
-                initial={{ opacity:0, scale:0}}
-                animate={ titleInView? { opacity:1, scale:1 } : {}} 
+                initial={{ opacity:0, }}
+                animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5, delay:0.2 }}
                 className="col-start-1 col-span-full 425:col-start-2 425:col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-start-4 2xl:col-span-3 text-center">Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
                     Nullam eget diam nec est facilisi faucibus. 
