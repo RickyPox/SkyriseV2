@@ -2,6 +2,7 @@ import { useState, useRef } from "react"
 import { motion, useInView } from "framer-motion";
 import Button from "./Button";
 import PlusSign from "./PlusSign";
+import Link from "next/link";
 
 export default function Contact (){
 
@@ -56,9 +57,9 @@ export default function Contact (){
             initial="hidden"
             animate={buttonsInView ? "show" : "hidden"}
             className="flex lg:flex-row flex-col justify-center items-center gap-[30px]">
-                <motion.div variants={children}><Button color="#FDFDFD" title="Download Deck" size="big"></Button></motion.div>
-                <motion.div variants={children}><Button color="#FDFDFD" title="Send An Email" size="big"></Button></motion.div>
-                <motion.div variants={children}><Button color="#FDFDFD" title="Schedule A Meeting" size="big"></Button></motion.div>
+                <Link href="https://drive.google.com/drive/folders/1qwPKtz7bmp5hQjGnCoTPK4ionhNPAAlX?usp=sharing" target="_blank"><motion.div variants={children}><Button color="#FDFDFD" title="Download Deck" size="big"></Button></motion.div></Link>
+                <Link href="https://t.me/xicosr"><motion.div variants={children}><Button color="#FDFDFD" title="Talk to us" size="big"></Button></motion.div></Link>
+                {/* <motion.div variants={children}><Button color="#FDFDFD" title="Schedule A Meeting" size="big"></Button></motion.div> */}
             </motion.div>
         </div>
     )

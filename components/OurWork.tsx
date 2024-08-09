@@ -31,14 +31,14 @@ export default function OurWork(){
             </div>
             <div 
             className="gridLayout grid pt-[120px]">
-                <WorkItem img="/Streamflow.png"></WorkItem>
-                <WorkItem img="/Metaplex.png"></WorkItem>
-                <WorkItem img="/SolanaFoundation.png"></WorkItem>
-                <WorkItem img="/Brave.png"></WorkItem>
-                <WorkItem img="/FlashTrade.png"></WorkItem>
-                <WorkItem img="/Solayer.png"></WorkItem>
-                <WorkItem img="/Mtndao.png"></WorkItem>
-                <WorkItem img="/IslandDao.png"></WorkItem>
+                <WorkItem img="/Streamflow.png" href="https://x.com/streamflow_fi"></WorkItem>
+                <WorkItem img="/Metaplex.png" href="https://x.com/metaplex"></WorkItem>
+                <WorkItem img="/SolanaFoundation.png" href="https://x.com/SolanaFndn"></WorkItem>
+                <WorkItem img="/Brave.png" href="https://x.com/brave"></WorkItem>
+                <WorkItem img="/FlashTrade.png" href="https://x.com/FlashTrade_"></WorkItem>
+                <WorkItem img="/Solayer.png" href="https://x.com/solayer_labs"></WorkItem>
+                <WorkItem img="/Mtndao.png" href="https://x.com/mtndao"></WorkItem>
+                <WorkItem img="/IslandDao.png" href="https://x.com/IslandDAOx"></WorkItem>
             </div>
 
             

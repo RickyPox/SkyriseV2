@@ -9,7 +9,7 @@ export default function LoadingVideo() {
             {isLoading && (
                 <video
                     onEnded={handleVideoEnd}
-                    className="w-screen h-screen object-cover"
+                    className="w-screen h-screen object-fit 2xl:object-cover"
                     muted={true}
                     autoPlay={true}
                     playsInline={true}
