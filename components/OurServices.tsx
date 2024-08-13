@@ -42,7 +42,7 @@ export default function OurServices(){
       text:"Establishing a community is crucial for sustained success. We assist in nurturing connections with your audience transforming followers into dedicated advocates who genuinely support your brand."
     },
     {
-      title:"Story Telling",
+      title:"Storytelling",
       text:"We strongly believe in the impact of storytelling to form connections with your audience. Our storytelling approach helps communicate your brands message in a manner that resonates emotionally leaving an impression, on your customers."
     },
   ]
