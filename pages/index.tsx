@@ -17,6 +17,7 @@ export default function Home() {
         <meta name="description" content="Accelerating, Growing and Activating your favourite Web3 projects." />
         <meta property="og:title" content="SkyRiseLabs" />
         <meta property="og:description" content="Accelerating, Growing and Activating your favourite Web3 projects." />
+        <meta property="og:image" content="/favicon.png" />
       </Head>
       <LoadingProvider>
         <LoadingVideo></LoadingVideo>
