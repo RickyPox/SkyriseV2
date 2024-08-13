@@ -33,19 +33,17 @@ export default function OurServices(){
   const services = [
     {
       title:"Growth & User Acquisition",
-      text:"Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. Nullam eget diam nec est facilisi faucibus. Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin.",
-    },
+      text:"Our primary focus is, on driving growth by implementing strategies to attract and retain customers. Through the use of data driven insights and innovative marketing methods we ensure that your business expands efficiently and successfully."    },
     {
       title:"Brand & Design",
-      text:"Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. Nullam eget diam nec est facilisi faucibus. Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin.",
-    },
+      text:"Developing a captivating brand identity is central to our work. Our team specializes in designing visuals that not grab attention but also effectively convey your brands value creating a memorable impression on your target audience."    },
     {
       title:"Community Building",
-      text:"Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. Nullam eget diam nec est facilisi faucibus. Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin.",
+      text:"Establishing a community is crucial for sustained success. We assist in nurturing connections with your audience transforming followers into dedicated advocates who genuinely support your brand."
     },
     {
       title:"Story Telling",
-      text:"Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. Nullam eget diam nec est facilisi faucibus. Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin.",
+      text:"We strongly believe in the impact of storytelling to form connections with your audience. Our storytelling approach helps communicate your brands message in a manner that resonates emotionally leaving an impression, on your customers."
     },
   ]
 
@@ -70,9 +68,7 @@ return(
             animate={ titleInView? { opacity:1,  } : {}} 
             transition={{ duration:0.5, delay:0.2 }}
             className="col-start-1 col-span-full 425:col-start-2 425:col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-start-4 2xl:col-span-3 text-center">
-              Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
-              Nullam eget diam nec est facilisi faucibus. 
-              Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin proin.
+              Explore a comprehensive range of solutions designed to elevate your business. Our services are tailored to your specific needs and goals.
             </motion.p>
 
             <PlusSign/>

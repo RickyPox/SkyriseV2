@@ -25,9 +25,7 @@ export default function OurNetwork(){
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5, delay:0.2 }}
                 className="col-start-1 col-span-full 425:col-start-2 425:col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-start-4 2xl:col-span-3 text-center">
-                Lorem ipsum dolor sit amet consectetur. Fermentum malesuada amet nulla quis vulputate at feugiat. 
-                Nullam eget diam nec est facilisi faucibus. 
-                Fames tempus fermentum aliquam nec facilisis justo nunc sollicitudin proin.
+                    A glimpse into our collaborative ecosystem, highlighting strategic partnerships and shared values that fuel innovation.
                 </motion.p>
                 <PlusSign/>
                 <PlusSign positon="right"/>
