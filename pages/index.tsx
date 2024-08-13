@@ -15,6 +15,8 @@ export default function Home() {
         <title>SkyRise</title>
         <link rel="icon" type="image/x-icon" href="/favicon.png"/>
         <meta name="description" content="Accelerating, Growing and Activating your favourite Web3 projects." />
+        <meta property="og:title" content="SkyRiseLabs" />
+        <meta property="og:description" content="Accelerating, Growing and Activating your favourite Web3 projects." />
       </Head>
       <LoadingProvider>
         <LoadingVideo></LoadingVideo>
