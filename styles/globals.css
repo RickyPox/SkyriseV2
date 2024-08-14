@@ -67,6 +67,7 @@ p.nav:hover{
 }
 
 
+
 .blink{
   -webkit-animation: blink 5s ease-out infinite normal;
   animation: blink 5s ease-out infinite normal;
@@ -124,6 +125,15 @@ p.nav:hover{
     gap:20px;
     margin: auto 100px;
   }
+
+  .WorkItem-imageTransition{
+    filter: invert(0%);
+  }
   
 
+  .WorkItem-imageTransitionBlack{
+    filter: invert(100%);
+  }
+
+ 
 }
