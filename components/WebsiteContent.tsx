@@ -1,5 +1,6 @@
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Joblist from "./Jobs";
 import { useLoading } from "./LoadingContext";
 import Navbar from "./Navbar";
 import OurNetwork from "./OurNetwork";
@@ -27,6 +28,9 @@ export default function WebsiteContent (){
                 </section>
                 <section className="pt-[240px]" id="Services">
                   <OurServices></OurServices>
+                </section>
+                <section className="pt-[200px]" id="Joblist">
+                  <Joblist></Joblist>
                 </section>
                 <section className="pt-[200px]" id="Network">
                   <OurNetwork></OurNetwork>

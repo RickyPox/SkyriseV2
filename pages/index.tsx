@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>SkyRise</title>
+        <title>SKYRISE</title>
         <link rel="icon" type="image/x-icon" href="/favicon.png"/>
 
       </Head>

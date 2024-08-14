@@ -83,7 +83,7 @@ return(
         className="gridLayout pt-[120px] flex flex-col 425:grid">
           {services.map((item, i) =>(
               <ServiceContainer
-              index={i}  
+                index={i}  
                 onMouseEnter={() => handleMouseEnter(i)}
                 onMouseLeave={handleMouseLeave} key={i} className={` flex flex-col gap-[10px] items-center justify-center mb-[60px] text-center col-start-1 col-span-full 425:col-start-2 425:col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-span-3`}>
                   <div className={`w-[30px] h-[30px] rounded-full flex items-center justify-center border-[#FDFDFD] border-[1px] hoverTransition ${hoverIndex === i ? "bg-[#FDFDFD] text-[#050505]" : ""}`}>

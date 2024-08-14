@@ -12,6 +12,10 @@ export default function Navbar (){
             href:"#Services"
         },
         {
+            name:"Joblist",
+            href:"#Joblist"
+        },
+        {
             name:"Network",
             href:"#Network"
         },
