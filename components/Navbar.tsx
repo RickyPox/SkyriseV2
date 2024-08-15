@@ -29,11 +29,13 @@ export default function Navbar (){
     return(
         <div className=" gridLayout lg:grid flex justify-center items-center relative h-[70px]">
             <img src="Logo.png" className="w-[70px]"></img>
+            <div className="col-start-3 col-span-full flex justify-between">
                 {navigation.map((item, i) => (
-                <div className="lg:block hidden" key={i} style={{ gridColumnStart: (i*2)+3 }}>
+                <div className="lg:block hidden" key={i}>
                     <Link href={item.href}><p className="nav">{item.name}</p></Link>
                 </div>
                 ))}
+                </div>
         </div>
     )
 }
