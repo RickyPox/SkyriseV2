@@ -65,11 +65,13 @@ export default function Joblist(){
                 animate={ jobsInView ? { opacity:1,  } : {}} 
                 transition={{ duration:0.5 }} className="col-span-full flex 2xl:flex-row flex-col items-center justify-center gap-[20px]">
                     {joblist.map((job, i)=>(
-                        <div key={i}  onMouseEnter={() => handleMouseEnter(i)} onMouseLeave={handleMouseLeave} className={`relative p-[30px] 1920:w-1/3 w-1/2 items-center justify-center border-[#FFFFFF] border-[1px]`}>
-                            <div className={`bg-gradient-to-r from-[#DAE8FA] to-[#FDFDFD] w-full h-full absolute left-0 top-0 -z-10 hoverTransition ${isHover === i ? "opacity-1" : "2xl:opacity-0 opacity-100"}`}/>
-                            <h2 className={`${isHover === i ? "text-[#050505]" : "2xl:text-[#FDFDFD] text-[#050505]"} hoverTransition `}>{job.title}</h2> 
-                            <p className={`mt-[5px] ${isHover === i ? " text-[#050505]" : "2xl:text-[#FDFDFD] text-[#050505]"} hoverTransition`}>{job.description}</p>
-                            <div className="flex justify-end mt-[30px] ">
+                        <div key={i}  onMouseEnter={() => handleMouseEnter(i)} onMouseLeave={handleMouseLeave} className={`relative p-[30px] 1920:w-1/3 w-1/2 min-h-[220px] h-full justify-between border-[#FFFFFF] border-[1px] flex flex-col`}>
+                            <div>
+                                <div className={`bg-gradient-to-r from-[#DAE8FA] to-[#FDFDFD] w-full h-full absolute left-0 top-0 -z-10 hoverTransition ${isHover === i ? "opacity-1" : "2xl:opacity-0 opacity-100"}`}/>
+                                <h2 className={`${isHover === i ? "text-[#050505]" : "2xl:text-[#FDFDFD] text-[#050505]"} hoverTransition `}>{job.title}</h2> 
+                                <p className={`mt-[5px] ${isHover === i ? " text-[#050505]" : "2xl:text-[#FDFDFD] text-[#050505]"} hoverTransition`}>{job.description}</p>
+                            </div>
+                            <div className="flex justify-end  mt-[30px]">
                                 <Link href={job.href}><p className={`${isHover === i ? "border-[#050505]" : "2xl:border-[#FFFFFF]"} hoverTransition bg-[#050505] border-[1px] py-[10px] px-[40px]`}>Apply Here</p></Link>
                             </div>
                         </div>
