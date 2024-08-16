@@ -66,6 +66,9 @@ p.nav:hover{
   filter: invert(100%);
 }
 
+.buttonFilter{
+  filter: invert(100%)
+}
 
 
 .blink{
@@ -135,5 +138,8 @@ p.nav:hover{
     filter: invert(100%);
   }
 
+  .buttonFilter{
+    filter: invert(0%)
+  }
  
 }
