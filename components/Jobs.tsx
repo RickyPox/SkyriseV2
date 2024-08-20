@@ -27,12 +27,12 @@ export default function Joblist(){
         {
             title:"Web3 Social Media Expert",
             description:"Focused on X, Telegram, and key Web3 channels to drive engagement and community growth through strategic content.",
-            href:"#",
+            href:"https://tally.so/r/w4LKPY",
         },
         {
             title:"Senior Web3 Community Manager",
             description:"Leads decentralized communities, enhancing engagement and brand presence in Web3 ecosystems.",
-            href:"#",
+            href:"https://tally.so/r/wQdk71",
         },
 ]
 
@@ -72,7 +72,7 @@ export default function Joblist(){
                                 <p className={`mt-[5px] ${isHover === i ? " text-[#050505]" : "2xl:text-[#FDFDFD] text-[#050505]"} hoverTransition`}>{job.description}</p>
                             </div>
                             <div className="flex justify-end  mt-[30px]">
-                                <Link href={job.href}><p className={`${isHover === i ? "border-[#050505]" : "2xl:border-[#FFFFFF]"} hoverTransition bg-[#050505] border-[1px] py-[10px] px-[40px]`}>Apply Here</p></Link>
+                                <Link href={job.href} target="_blank"><p className={`${isHover === i ? "border-[#050505]" : "2xl:border-[#FFFFFF]"} hoverTransition bg-[#050505] border-[1px] py-[10px] px-[40px]`}>Apply Here</p></Link>
                             </div>
                         </div>
                     ))}

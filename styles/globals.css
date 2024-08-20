@@ -35,6 +35,8 @@ h2{
 }
 
 p{
+  font-family:"neue-haas-grotesk-display";
+  font-weight: 400;
   font-size:clamp(0.75rem, 0.6818rem + 0.341vw, 0.9rem);
   line-height: 125%;
 }
