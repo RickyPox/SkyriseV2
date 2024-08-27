@@ -4,6 +4,10 @@ export default function Navbar (){
     
     const navigation = [
         {
+            name:"About",
+            href:"#About"
+        },
+        {
             name:"Work",
             href:"#Work"
         },

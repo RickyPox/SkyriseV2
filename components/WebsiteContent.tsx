@@ -1,3 +1,4 @@
+import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Joblist from "./Jobs";
@@ -22,6 +23,9 @@ export default function WebsiteContent (){
               </section>
               <section>
                   <Video></Video>
+                </section>
+                <section className="pt-[300px]" id="About">
+                  <About></About>
                 </section>
                 <section className="pt-[200px]" id="Work">
                   <OurWork></OurWork>
