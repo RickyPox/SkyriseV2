@@ -1,19 +1,20 @@
 import Marquee from "react-fast-marquee";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react"
 
 export default function MarqueeSlider (props:any){
 
-    const marquee=["/Metaplex.png","/SolanaFoundation.png","/Brave.png","/FlashTrade.png","/Solayer.png","/Mtndao.png","/IslandDao.png"]
+    const marquee=["/Metaplex.png","/SolanaFoundation.png","/Brave.png","/FlashTrade.png","/Solayer.png","/Mtndao.png","/IslandDao.png","/BlocksmithLabs.png","/DeadKingSociety.png","/Goated.png","/MagicEden.png"]
 
     return(
         <div>
             <Marquee
             autoFill
-            speed={50}
-            direction={props.direction}>
+            speed={25}
+            direction={props.direction}
+            gradient
+            gradientColor="black"
+            gradientWidth="25%">
                 {marquee.map((img, i)=>(
-                    <div className="w-[25vw] mx-[5vw] my-[2vw] lg:mx-[25px] lg:my-[12px] max-w-[190px]">
+                    <div className="w-[25vw] mx-[5vw] my-[2vw] lg:mx-[25px] lg:my-[12px] max-w-[140px]">
                         <img  src={img}></img>
                     </div>
                 ))}

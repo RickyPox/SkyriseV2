@@ -18,7 +18,7 @@ export default function OurNetwork(){
                 initial={{ opacity:0, }}
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5 }}
-                className="col-start-1 col-span-full text-center">Our Network</motion.h1>
+                className="col-start-1 col-span-full text-center mt-[35px]">Our Network</motion.h1>
                 <motion.p 
                 ref={title} 
                 initial={{ opacity:0, }}

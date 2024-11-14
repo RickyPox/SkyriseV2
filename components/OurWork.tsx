@@ -17,7 +17,7 @@ export default function OurWork(){
                 initial={{ opacity:0, }}
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5 }}
-                className="col-start-2 col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-start-4 2xl:col-span-3 text-center">Our Work</motion.h1>
+                className="col-start-2 col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-start-4 2xl:col-span-3 text-center mt-[35px]">Our Work</motion.h1>
                 <motion.p 
                 ref={title} 
                 initial={{ opacity:0, }}

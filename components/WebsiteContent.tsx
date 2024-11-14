@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import OurNetwork from "./OurNetwork";
 import OurServices from "./OurServices";
 import OurWork from "./OurWork";
-import Video from "./Video";
+import Landing from "./Landing";
 
 export default function WebsiteContent (){
 
@@ -22,9 +22,9 @@ export default function WebsiteContent (){
                 <Navbar></Navbar>
               </section>
               <section>
-                  <Video></Video>
+                  <Landing></Landing>
                 </section>
-                <section className="pt-[300px]" id="About">
+                <section className="pt-[400px]" id="About">
                   <About></About>
                 </section>
                 <section className="pt-[200px]" id="Work">
