@@ -55,7 +55,7 @@ export default function Contact (){
             initial="hidden"
             animate={buttonsInView ? "show" : "hidden"}
             className="flex lg:flex-row flex-col justify-center items-center gap-[30px]">
-                <Link href="https://drive.google.com/drive/folders/1qwPKtz7bmp5hQjGnCoTPK4ionhNPAAlX?usp=sharing" target="_blank"><motion.div variants={children}><Button color="#FDFDFD" title="Download Deck" size="big"></Button></motion.div></Link>
+                <Link href="https://drive.google.com/file/d/1AYkMHBr1pIraabnTTGsjSIyaNfj647ya/view?usp=sharing" target="_blank"><motion.div variants={children}><Button color="#FDFDFD" title="Download Deck" size="big"></Button></motion.div></Link>
                 <Link href="https://t.me/xicosr"><motion.div variants={children}><Button color="#FDFDFD" title="Talk to us" size="big"></Button></motion.div></Link>
                 {/* <motion.div variants={children}><Button color="#FDFDFD" title="Schedule A Meeting" size="big"></Button></motion.div> */}
             </motion.div>

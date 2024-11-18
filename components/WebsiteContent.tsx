@@ -24,25 +24,25 @@ export default function WebsiteContent (){
               <section>
                   <Landing></Landing>
                 </section>
-                <section className="pt-[400px]" id="About">
+                <section className="pt-[220px]" id="About">
                   <About></About>
                 </section>
-                <section className="pt-[200px]" id="Work">
+                <section className="pt-[250px]" id="Work">
                   <OurWork></OurWork>
                 </section>
                 <section className="pt-[240px]" id="Services">
                   <OurServices></OurServices>
                 </section>
-                <section className="pt-[200px]" id="Joblist">
+                <section className="pt-[210px]" id="Joblist">
                   <Joblist></Joblist>
                 </section>
-                <section className="pt-[200px]" id="Network">
+                <section className="pt-[280px]" id="Network">
                   <OurNetwork></OurNetwork>
                 </section>
-                <section className="pt-[200px]" id="Contact">
+                <section className="pt-[230px]" id="Contact">
                   <Contact></Contact>
                 </section>
-                <section className="pt-[140px] mb-[100px]">
+                <section className="pt-[330px] mb-[100px]">
                   <Footer></Footer>
                 </section>
               </div> 

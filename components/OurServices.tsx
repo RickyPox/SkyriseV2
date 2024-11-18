@@ -80,7 +80,7 @@ return(
           initial={{ opacity:0, }}
           animate={ contentInView ? { opacity:1,  } : {}} 
           transition={{ duration:0.5 }}
-        className="gridLayout pt-[120px] flex flex-col 425:grid">
+        className="gridLayout pt-[110px] flex flex-col 425:grid">
           {services.map((item, i) =>(
               <ServiceContainer
                 index={i}  

@@ -58,7 +58,7 @@ export default function Joblist(){
                 <PlusSign positon="right"/>
             </div>
             <div 
-            className="gridLayout grid pt-[50px] sm:pt-[80px] 2xl:pt-[140px]">
+            className="gridLayout grid pt-[50px] sm:pt-[80px] 2xl:pt-[100px]">
                 <motion.div 
                 ref={jobs}
                 initial={{ opacity:0, }}

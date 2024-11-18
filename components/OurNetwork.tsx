@@ -12,7 +12,7 @@ export default function OurNetwork(){
 
     return(
         <div>
-            <div className='gridLayout grid pb-[120px] relative'>
+            <div className='gridLayout grid pb-[110px] relative'>
                 <motion.h1 
                 ref={title} 
                 initial={{ opacity:0, }}
@@ -34,9 +34,7 @@ export default function OurNetwork(){
             
             >
                 <MarqueeSlider></MarqueeSlider>
-                <MarqueeSlider direction="right"></MarqueeSlider>
                 <MarqueeSlider></MarqueeSlider>
-                <MarqueeSlider direction="right"></MarqueeSlider>
             </motion.div>
         </div>
     )

@@ -15,15 +15,14 @@ export default function Landing (){
         animate={ inView? { opacity:1} : {}} 
         transition={{ duration:0.5 }}
         className="flex flex-col items-center justify-center relative">
-            <img src="/LandingBg.png"></img>
+            <img className="min-w-[1250px] overflow-hidden" src="/LandingBg.png"></img>
             <div className="absolute text-center">
                 <h1>Connecting Ideas</h1>
                 <p>Connecting and Growing Ideas - from 0 to 1.</p>
             </div>
         </motion.div>
-            <div className="-mt-[140px] relative z-10">
+        <div className="-mt-[140px] relative z-10">
             <MarqueeSlider></MarqueeSlider>
-            <MarqueeSlider direction="right"></MarqueeSlider>
             </div>
         </div>
     )

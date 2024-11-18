@@ -2,20 +2,36 @@ import Marquee from "react-fast-marquee";
 
 export default function MarqueeSlider (props:any){
 
-    const marquee=["/Metaplex.png","/SolanaFoundation.png","/Brave.png","/FlashTrade.png","/Solayer.png","/Mtndao.png","/IslandDao.png","/BlocksmithLabs.png","/DeadKingSociety.png","/Goated.png","/MagicEden.png"]
+    const marquee=["/Metaplex.png","/SolanaFoundation.png","/Brave.png","/Flash.png","/Solayer.png","/Mtndao.png","/IslandDao.png","/BlocksmithLabs.png","/DeadKingSociety.png","/Goated.png","/MagicEden.png"]
 
     return(
-        <div>
+        <div className="">
             <Marquee
             autoFill
             speed={25}
-            direction={props.direction}
             gradient
             gradientColor="black"
             gradientWidth="25%">
                 {marquee.map((img, i)=>(
-                    <div className="w-[25vw] mx-[5vw] my-[2vw] lg:mx-[25px] lg:my-[12px] max-w-[140px]">
-                        <img  src={img}></img>
+                    <div 
+                    key={i}
+                    className="mx-[5vw] my-[2vw] lg:mx-[25px] lg:my-[12px]" >
+                        <img src={"/marquee/" + img}></img>
+                    </div>
+                ))}
+            </Marquee>
+            <Marquee
+            autoFill
+            speed={25}
+            direction="right"
+            gradient
+            gradientColor="black"
+            gradientWidth="25%">
+                {marquee.reverse().map((img, i)=>(
+                    <div 
+                    key={i}
+                    className="mx-[5vw] my-[2vw] lg:mx-[25px] lg:my-[12px]" >
+                        <img src={"/marquee/" + img}></img>
                     </div>
                 ))}
             </Marquee>

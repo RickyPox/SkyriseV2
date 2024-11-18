@@ -73,7 +73,6 @@ p.nav:hover{
   filter: invert(100%)
 }
 
-
 .blink{
   -webkit-animation: blink 5s ease-out infinite normal;
   animation: blink 5s ease-out infinite normal;

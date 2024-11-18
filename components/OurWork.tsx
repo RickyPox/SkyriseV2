@@ -30,7 +30,7 @@ export default function OurWork(){
                     <PlusSign positon="right"/>
             </div>
             <div 
-            className="gridLayout grid pt-[120px]">
+            className="gridLayout grid pt-[105px]">
                 <WorkItem img="/Streamflow.png" href="https://x.com/streamflow_fi"></WorkItem>
                 <WorkItem img="/Metaplex.png" href="https://x.com/metaplex"></WorkItem>
                 <WorkItem img="/SolanaFoundation.png" href="https://x.com/SolanaFndn"></WorkItem>
