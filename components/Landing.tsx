@@ -14,8 +14,8 @@ export default function Landing (){
         initial={{ opacity:0}}
         animate={ inView? { opacity:1} : {}} 
         transition={{ duration:0.5 }}
-        className="flex flex-col items-center justify-center relative">
-            <img className="min-w-[1250px] overflow-hidden" src="/LandingBg.png"></img>
+        className="flex flex-col items-center justify-center relative overflow-hidden">
+            <img className="min-w-[1250px] " src="/LandingBg.png"></img>
             <div className="absolute text-center">
                 <h1>Connecting Ideas</h1>
                 <p>Connecting and Growing Ideas - from 0 to 1.</p>

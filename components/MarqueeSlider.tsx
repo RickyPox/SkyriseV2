@@ -2,7 +2,57 @@ import Marquee from "react-fast-marquee";
 
 export default function MarqueeSlider (props:any){
 
-    const marquee=["/Metaplex.png","/SolanaFoundation.png","/Brave.png","/Flash.png","/Solayer.png","/Mtndao.png","/IslandDao.png","/BlocksmithLabs.png","/DeadKingSociety.png","/Goated.png","/MagicEden.png"]
+    const marquee=[
+        {
+            img:"Metaplex.png",
+            width:"195px",
+        },
+        {
+            img:"SolanaFoundation.png",
+            width:"130px",
+        },
+        {
+            img:"Brave.png",
+            width:"92px",
+        },
+        {
+            img:"MagicEden.png",
+            width:"142px",
+        },
+        {
+            img:"BlocksmithLabs.png",
+            width:"210px",
+        },
+        {
+            img:"DeadKingSociety.png",
+            width:"187px",
+        },
+        {
+            img:"Solayer.png",
+            width:"120px",
+        },
+        {
+            img:"StreamFlow.png",
+            width:"175px",
+        },
+        {
+            img:"Mtndao.png",
+            width:"140px",
+        },
+        {
+            img:"Flash.png",
+            width:"95px",
+        },
+        {
+            img:"IslandDao.png",
+            width:"105px",
+        },
+        {
+            img:"Goated.png",
+            width:"140px",
+        },
+
+]
 
     return(
         <div className="">
@@ -16,7 +66,10 @@ export default function MarqueeSlider (props:any){
                     <div 
                     key={i}
                     className="mx-[5vw] my-[2vw] lg:mx-[25px] lg:my-[12px]" >
-                        <img src={"/marquee/" + img}></img>
+                        <img
+                        src={"/marquee/" + img.img}
+                        style={{ width: img.width }}
+                        />
                     </div>
                 ))}
             </Marquee>
@@ -28,11 +81,14 @@ export default function MarqueeSlider (props:any){
             gradientColor="black"
             gradientWidth="25%">
                 {marquee.reverse().map((img, i)=>(
-                    <div 
-                    key={i}
-                    className="mx-[5vw] my-[2vw] lg:mx-[25px] lg:my-[12px]" >
-                        <img src={"/marquee/" + img}></img>
-                    </div>
+                <div 
+                key={i}
+                className="mx-[5vw] my-[2vw] lg:mx-[25px] lg:my-[12px]" >
+                    <img
+                    src={"/marquee/" + img.img}
+                    style={{ width: img.width }}
+                    />
+                </div>
                 ))}
             </Marquee>
 
