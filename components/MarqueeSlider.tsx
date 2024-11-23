@@ -36,7 +36,7 @@ export default function MarqueeSlider (props:any){
             width:"175px",
         },
         {
-            img:"Mtndao.png",
+            img:"mtndao.png",
             width:"140px",
         },
         {
