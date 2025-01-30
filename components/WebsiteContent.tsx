@@ -3,7 +3,6 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import { useLoading } from "./LoadingContext";
 import Navbar from "./Navbar";
-import OurNetwork from "./OurNetwork";
 import OurServices from "./OurServices";
 import OurWork from "./OurWork";
 import Landing from "./Landing";
