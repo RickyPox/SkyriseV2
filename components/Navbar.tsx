@@ -36,7 +36,7 @@ export default function Navbar (){
             <div className="col-start-3 col-span-full flex justify-between">
                 {navigation.map((item, i) => (
                 <div className="lg:block hidden" key={i}>
-                    <Link href={item.href}><p className="nav">{item.name}</p></Link>
+                    <Link href={item.href}><h2 className="text-[#606060]">{item.name}</h2></Link>
                 </div>
                 ))}
                 </div>

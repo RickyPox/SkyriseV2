@@ -2,6 +2,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import MarqueeSlider from "./MarqueeSlider";
+import Spotlight from "./Spotlight";
 
 export default function Landing (){
 
@@ -9,7 +10,10 @@ export default function Landing (){
     const inView = useInView(view, { once: true });
 
     return(
-        <div>
+        <div className="relative">
+            <div className="absolute top-0 -translate-x-[50%]">
+                <Spotlight size="568"></Spotlight>
+            </div>
         <motion.div ref={view} 
         initial={{ opacity:0}}
         animate={ inView? { opacity:1} : {}} 
@@ -18,7 +22,7 @@ export default function Landing (){
             <img className="min-w-[1250px] " src="/LandingBg.png"></img>
             <div className="absolute text-center">
                 <h1>Connecting Ideas</h1>
-                <p>Connecting and Growing Ideas - from 0 to 1.</p>
+                <h3 className="text-[#C8DDF8]">Connecting and Growing Ideas - from 0 to 1.</h3>
             </div>
         </motion.div>
         <div className="-mt-[140px] relative z-10">
