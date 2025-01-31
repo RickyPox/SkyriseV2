@@ -52,7 +52,7 @@ export default function Contact (){
             variants={container}
             initial="hidden"
             animate={buttonsInView ? "show" : "hidden"}
-            className="flex lg:flex-row flex-col justify-center items-center gap-[30px]">
+            className="flex lg:flex-row flex-col justify-center items-center gap-[30px] mt-[100px]">
                 <Link href="#" target="_blank">
                     <motion.div variants={children}>
                         <Button color="#FDFDFD" title="Lorem Ipsum" size="big"/>

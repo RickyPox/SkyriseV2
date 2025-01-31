@@ -12,7 +12,7 @@ export default function Button (props:any){
         <div onMouseEnter={handleHover} onMouseLeave={handleHover} className="relative w-[210px] lg:w-[295px] py-[20px] lg:py-[25px] flex gap-[10px] justify-center"
         style={{ 
             border: `solid 1px ${props.color}`
-         }}>
+        }}>
             <div className={`bg-gradient-to-r from-[#DAE8FA] to-[#FDFDFD] w-full h-full absolute top-0 -z-10 hoverTransition ${isHover ? "opacity-1" : "2xl:opacity-0 opacity-1"}`}></div>
         <p className={`hoverTransition ${isHover ? "text-[#050505]" : "2xl:text-[#FDFDFD] text-[#050505]"}`}>{props.title}</p>
         <div className={`flex items-center ${isHover ? "" : "buttonFilter"}`}>

@@ -54,14 +54,14 @@ export default function OurWork(){
                 <div className="col-start-2 col-span-9 grid grid-cols-9 gap-x-[20px]">
                     {clients.map((client, i) =>(
                         <div key={i} className="col-span-3">
-                            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(239, 246, 254, 0.4)">
+                            <SpotlightCard className="custom-spotlight-card " spotlightColor="rgba(239, 246, 254, 0.4)">
                                 <div
                                     onMouseEnter={() => setIsHovered(i)}
                                     onMouseLeave={() => setIsHovered(null)} 
-                                    className={`${isHovered === i ? "border-[#EFF6FE00] border-[1px]" : "border-[1px] border-[#EFF6FE]"} hoverTransition flex flex-col gap-y-[10px] justify-center items-center w-full py-[24px]`}
+                                    className={`${isHovered === i ? "border-[#EFF6FE00] border-[1px]" : "border-[1px] border-[#EFF6FE]"}  hoverTransition flex flex-col gap-y-[10px] justify-center items-center w-full py-[24px]`}
                                 >
                                     <div className="flex flex-col">
-                                        <img className="px-[120px]" src={`/${client.img}`}/>
+                                        <img className="px-[120px] h-[50px] object-contain" src={`/${client.img}`}/>
                                         <div className="h-[1px] bg-[#C8DDF8] mt-[25px] mb-[30px] mx-[90px]"/>
                                         <h2 className="px-[50px] text-center">{client.text}</h2>
                                     </div>

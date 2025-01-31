@@ -58,10 +58,7 @@ export default function MarqueeSlider (props:any){
         <div className="">
             <Marquee
             autoFill
-            speed={25}
-            gradient
-            gradientColor="black"
-            gradientWidth="25%">
+            speed={25}>
                 {marquee.map((img, i)=>(
                     <div 
                     key={i}
@@ -76,10 +73,7 @@ export default function MarqueeSlider (props:any){
             <Marquee
             autoFill
             speed={25}
-            direction="right"
-            gradient
-            gradientColor="black"
-            gradientWidth="25%">
+            direction="right">
                 {marquee.reverse().map((img, i)=>(
                 <div 
                 key={i}

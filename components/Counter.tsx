@@ -6,7 +6,7 @@ import SpotlightCard from './SpotlightCard';
 export default function Counter(props: any) {
     const [count, setCount] = useState(0);
     const ref = useRef(null); // Reference for the component
-    const isInView = useInView(ref, {once: true}); // Checks if the component is visible
+    const isInView = useInView(ref, { margin:"-20% 0px -20% 0px", once: true }); // Checks if the component is visible
     const [isHovered, setIsHovered] = useState(false)
 
     useEffect(() => {

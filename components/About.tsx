@@ -26,7 +26,7 @@ export default function About(){
                 initial={{ opacity:0, }}
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5, delay:0.2 }}
-                className="col-start-3 col-span-7 text-center">
+                className="lg:col-start-3 lg:col-span-7 col-start-1 col-span-full text-center">
                     Lorem ipsum dolor sit amet consectetur. Rutrum ultrices est ultrices tortor odio congue eget. Sed dictum fringilla nisl proin integer consectetur maecenas.
                 </motion.h4>
             </div>
@@ -36,14 +36,14 @@ export default function About(){
             animate={ contentInView? { opacity:1,  } : {}} 
             transition={{ duration:0.5 }}
             className="gridLayout grid pt-[105px]">
-                <div className="col-start-2 col-span-9 grid grid-cols-9 gap-x-[20px]">
-                    <div className="col-span-3">
+                <div className="lg:col-start-2 lg:col-span-9 grid lg:grid-cols-9 grid-cols-6 col-span-6 gap-x-[20px]">
+                    <div className="lg:col-span-3 col-span-full" >
                         <Counter title="[title]" total="5000"></Counter>
                     </div>
-                    <div className="col-span-3">
+                    <div className="lg:col-span-3 col-span-full">
                         <Counter title="[title]" total="5000"></Counter>
                     </div>
-                    <div className="col-span-3">
+                    <div className="lg:col-span-3 col-span-full">
                         <Counter title="[title]" total="5000"></Counter>
                     </div>
                 </div>

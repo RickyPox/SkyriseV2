@@ -11,7 +11,7 @@ export default function Landing (){
 
     return(
         <div className="relative">
-            <div className="absolute top-0 -translate-x-[50%]">
+            <div className="absolute top-0 ">
                 <Spotlight size="568"></Spotlight>
             </div>
         <motion.div ref={view} 

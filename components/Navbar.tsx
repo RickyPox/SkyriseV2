@@ -4,42 +4,37 @@ export default function Navbar (){
     
     const navigation = [
         {
-            name:"About",
+            name:"About US",
             href:"#About"
         },
         {
-            name:"Work",
+            name:"Previous Work",
             href:"#Work"
         },
         {
-            name:"Services",
+            name:"Our Services",
             href:"#Services"
         },
         {
-            name:"Joblist",
+            name:"Contact Us",
             href:"#Joblist"
-        },
-        {
-            name:"Network",
-            href:"#Network"
-        },
-        {
-            name:"Contact",
-            href:"#Contact"
         },
     ]
 
 
     return(
-        <div className=" gridLayout lg:grid flex justify-center items-center relative h-[70px]">
-            <img src="Logo.png" className="w-[70px]"></img>
-            <div className="col-start-3 col-span-full flex justify-between">
-                {navigation.map((item, i) => (
-                <div className="lg:block hidden" key={i}>
-                    <Link href={item.href}><h2 className="text-[#606060]">{item.name}</h2></Link>
-                </div>
-                ))}
-                </div>
+        <div className="gridLayout grid">
+            <div className="col-start-2 col-span-9 flex justify-between py-[60px]">
+                <h2>SkyRise Labs / <span className="text-[#606060]">SkyRise Studios</span></h2>
+                <div className="flex">
+                    {navigation.map((item, i) => (
+                    <div key={i} className="flex items-center justify-center">
+                        <Link href={item.href}><h2 className="text-[#606060]">{item.name}{i < navigation.length - 1 && <span className="mx-2">/</span>}</h2></Link>
+                       
+                    </div>
+                    ))}
+                    </div>
+            </div>
         </div>
     )
 }
