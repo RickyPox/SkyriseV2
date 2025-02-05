@@ -26,7 +26,7 @@ export default function About(){
                 initial={{ opacity:0, }}
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5, delay:0.2 }}
-                className="lg:col-start-3 lg:col-span-7 col-start-1 col-span-full text-center">
+                className="xl:col-start-3 xl:col-span-7 col-start-1 col-span-full text-center">
                     Lorem ipsum dolor sit amet consectetur. Rutrum ultrices est ultrices tortor odio congue eget. Sed dictum fringilla nisl proin integer consectetur maecenas.
                 </motion.h4>
             </div>
@@ -36,15 +36,15 @@ export default function About(){
             animate={ contentInView? { opacity:1,  } : {}} 
             transition={{ duration:0.5 }}
             className="gridLayout grid pt-[105px]">
-                <div className="lg:col-start-2 lg:col-span-9 grid lg:grid-cols-9 grid-cols-6 col-span-6 gap-x-[20px]">
-                    <div className="lg:col-span-3 col-span-full" >
-                        <Counter title="[title]" total="5000"></Counter>
+                <div className="xl:col-start-2 xl:col-span-9 xl:grid xl:grid-cols-9 lg:col-start-3 lg:col-span-4 col-span-full flex flex-col xl:gap-x-[20px] xl:gap-y-0 gap-y-[50px]">
+                    <div className="xl:col-span-3 col-span-full" >
+                        <Counter title="[Total Clients]" total="5500"></Counter>
                     </div>
-                    <div className="lg:col-span-3 col-span-full">
-                        <Counter title="[title]" total="5000"></Counter>
+                    <div className="xl:col-span-3 col-span-full">
+                        <Counter title="[Projects Developed]" total="5500"></Counter>
                     </div>
-                    <div className="lg:col-span-3 col-span-full">
-                        <Counter title="[title]" total="5000"></Counter>
+                    <div className="xl:col-span-3 col-span-full">
+                        <Counter title="[Engagement Generated]" total="5500"></Counter>
                     </div>
                 </div>
             </motion.div>

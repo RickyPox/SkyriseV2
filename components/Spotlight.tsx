@@ -1,9 +1,5 @@
-import { useEffect, useState } from "react";
 
 export default function Spotlight (props:any){
-
-
-
     return(
         <div>
             <div className="rounded-full bg-[#C8DDF8] blur-[260px]"

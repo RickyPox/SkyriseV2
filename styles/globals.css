@@ -73,6 +73,8 @@ p{
   transition: all 0.3s ease-in-out;
 }
 
+
+
 @media (min-width: 1024px){
   h1{
     font-size: clamp(3.75rem, 1.407rem + 3.661vw, 5.8rem	); /* 60 -> 93px */

@@ -42,7 +42,7 @@ export default function Contact (){
                 initial={{ opacity:0, }}
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5, delay:0.2 }}
-                className="col-start-3 col-span-7 text-center">
+                className="xl:col-start-3 xl:col-span-7 col-start-1 col-span-full text-center">
                     Lorem ipsum dolor sit amet consectetur. Rutrum ultrices est ultrices tortor odio congue eget. Sed dictum fringilla nisl proin integer consectetur maecenas.
                 </motion.h4>
             </div>
