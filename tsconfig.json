@@ -17,6 +17,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/LoadingContext.tsx", "components/SpotlightCard.js", "components/SpotlightCard.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/LoadingContext.tsx", "components/SpotlightCard.js", "components/SpotlightCard.js", "components/Counter.tsx"],
   "exclude": ["node_modules"]
 }

@@ -2,24 +2,34 @@ import { useEffect, useState, useRef } from "react";
 import { useInView } from "framer-motion";
 import SpotlightCard from './SpotlightCard';
 
+const useHasMounted = () => {
+    const [hasMounted, setHasMounted] = useState(false);
+
+    useEffect(() => {
+        setHasMounted(true);
+    }, []);
+
+    return hasMounted;
+};
+
 export default function Counter(props: any) {
     const [count, setCount] = useState(0);
     const ref = useRef(null);
     const isInView = useInView(ref, { margin: "-20% 0px -20% 0px", once: true });
-    const [isHovered, setIsHovered] = useState(false);
+    const isHovered = useRef(false);
+    const hasMounted = useHasMounted();
 
     useEffect(() => {
-        if (!isInView) return;
+        if (!isInView || !hasMounted) return;
 
         const end = props.total;
-        const duration = 1000; // Animation Duration (ms)
-        const startTime = performance.now(); // Initial time
+        const duration = 1000;
+        const startTime = performance.now();
 
         const animate = (currentTime: number) => {
             const elapsedTime = currentTime - startTime;
             const progress = Math.min(elapsedTime / duration, 1);
-            const newValue = Math.floor(progress * end);
-            setCount(newValue);
+            setCount(Math.floor(progress * end));
 
             if (progress < 1) {
                 requestAnimationFrame(animate);
@@ -27,15 +37,17 @@ export default function Counter(props: any) {
         };
 
         requestAnimationFrame(animate);
-    }, [isInView, props.total]);
+    }, [isInView, props.total, hasMounted]);
 
     return (
         <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(239, 246, 254, 0.4)">
             <div
                 ref={ref}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                className={`${isHovered ? "border-[#EFF6FE00] border-[1px]" : "border-[1px] border-[#EFF6FE]"} hoverTransition flex flex-col gap-y-[10px] justify-center items-center w-full py-[24px]`}
+                onMouseEnter={() => (isHovered.current = true)}
+                onMouseLeave={() => (isHovered.current = false)}
+                className={`${
+                    isHovered.current ? "border-[#EFF6FE00]" : "border-[#EFF6FE]"
+                } border-[1px] hoverTransition flex flex-col gap-y-[10px] justify-center items-center w-full py-[24px]`}
             >
                 <h2>{props.title}</h2>
                 <h5>{count}+</h5>

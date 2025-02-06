@@ -17,7 +17,7 @@ export default function WebsiteContent (){
         <>
         {!isLoading &&
             <div>
-              <section>
+              <section className="relative">
                 <Navbar></Navbar>
               </section>
 

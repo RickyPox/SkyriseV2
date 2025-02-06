@@ -16,8 +16,8 @@ export default function Footer(){
         animate={ inView? { opacity:1,  } : {}} 
         transition={{ duration:0.5 }}
         className="gridLayout grid w-full max-w-[1920px]">
-            <div className="col-start-2 col-span-9 h-[1px] bg-[#FDFDFD] block"/>
-            <div className="col-start-2 col-span-9 flex  flex-row items-start justify-between ">
+            <div className="xl:col-start-2 xl:col-span-9 lg:col-start-2 lg:col-span-6 col-span-full h-[1px] bg-[#FDFDFD] block"/>
+            <div className="xl:col-start-2 xl:col-span-9 lg:col-start-2 lg:col-span-6 col-span-full flex flex-row items-start justify-between ">
                 <Link href="#"><h2 className="text-[#EFF6FE]">SKYRISE©</h2></Link>
                 <div className="flex gap-x-[35px]">
                     <Link href="https://www.instagram.com/skyriselabs/" target="_blank"><img src="/Insta.png" alt="InstaLogo"/></Link>
