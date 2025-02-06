@@ -21,11 +21,9 @@ export default function Landing (){
                 <h1>Connecting Ideas</h1>
                 <h3 className="text-[#C8DDF8]">Connecting and Growing Ideas - from 0 to 1.</h3>
             </div>
-            <div className="absolute top-[62%]"><Button title="Get To Know Us" href="#" size="Big" color="#EFF6FE"></Button></div>
+            <div className="absolute top-[62%]"><Button title="Get To Know Us" href="#" color="#EFF6FE"></Button></div>
         </motion.div>
-        <div className="-mt-[140px] relative z-10">
-            <MarqueeSlider></MarqueeSlider>
-            </div>
+
         </div>
     )
 }

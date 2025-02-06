@@ -840,6 +840,11 @@ react-fast-marquee@^1.6.2:
   resolved "https://registry.npmjs.org/react-fast-marquee/-/react-fast-marquee-1.6.2.tgz"
   integrity sha512-bXUuW1r+Yzd8ZjsPmMDy8WJMubHAZd/7n0W/IzUQHtd0iBfxWohP6hzCFnEHWMCOtC9wxSAq/BiEnig4kdI2Vw==
 
+react-intersection-observer@^9.15.1:
+  version "9.15.1"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.15.1.tgz#5866b6fdfef24be9f288b74b35b773f63d90c3eb"
+  integrity sha512-vGrqYEVWXfH+AGu241uzfUpNK4HAdhCkSAyFdkMb9VWWXs6mxzBLpWCxEy9YcnDNY2g9eO6z7qUtTBdA9hc8pA==
+
 react-slick@^0.30.1:
   version "0.30.1"
   resolved "https://registry.npmjs.org/react-slick/-/react-slick-0.30.1.tgz"

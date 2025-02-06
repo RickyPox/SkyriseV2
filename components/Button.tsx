@@ -20,7 +20,7 @@ export default function Button (props:any){
 
     return(
         <Link href={props.href ? props.href : "#"}>
-            <div onMouseEnter={handleHover} onMouseLeave={handleHover} className="relative w-[210px] lg:w-[295px] py-[20px] lg:py-[25px] flex gap-[10px] justify-center z-20"
+            <div onMouseEnter={handleHover} onMouseLeave={handleHover} className="relative w-[210px] lg:w-[225px] py-[15px] flex gap-[10px] justify-center z-20"
             style={{ 
                 border: `solid 1px ${props.color}`
             }}>

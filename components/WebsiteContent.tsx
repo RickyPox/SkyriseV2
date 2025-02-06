@@ -4,9 +4,10 @@ import Footer from "./Footer";
 import { useLoading } from "./LoadingContext";
 import Navbar from "./Navbar";
 import OurServices from "./OurServices";
-import OurWork from "./OurWork";
+import CaseStudies from "./CaseStudies";
 import Landing from "./Landing";
 import Spotlight from "./Spotlight";
+import MarqueeSlider from "./MarqueeSlider";
 
 export default function WebsiteContent (){
 
@@ -21,14 +22,20 @@ export default function WebsiteContent (){
                 <Navbar></Navbar>
               </section>
 
-              <section className="relative">
+              <section className="relative" id="Home">
                   <div className="flex flex-col items-center">
                     <Landing></Landing>
                   </div>
                   <div className="absolute top-[50%] -translate-y-[50%] -translate-x-[50%] -z-20 pointer-events-none">
                     <Spotlight size="568"></Spotlight>
                   </div>
+
+                  <div className="-mt-[140px] relative z-10">
+                    <MarqueeSlider></MarqueeSlider>
+                    <MarqueeSlider direction="right" reverse="true"></MarqueeSlider>
+                  </div>
                 </section>
+                
 
                 <section className="pt-[220px] relative" id="About">
                   <div className="flex flex-col items-center">
@@ -39,9 +46,9 @@ export default function WebsiteContent (){
                   </div>
                 </section>
 
-                <section className="pt-[250px] relative" id="Work">
+                <section className="pt-[250px] relative" id="CaseStudies">
                   <div className="flex flex-col items-center">
-                    <OurWork></OurWork>
+                    <CaseStudies></CaseStudies>
                   </div>
                   <div className="absolute top-[50%] -translate-y-[50%] left-0 -translate-x-[50%] -z-20 pointer-events-none">
                     <Spotlight size="568"></Spotlight>
@@ -57,7 +64,7 @@ export default function WebsiteContent (){
                   </div>
                 </section>
 
-                <section className="pt-[230px] relative" id="Contact">
+                <section className="pt-[230px] relative" id="Contacts">
                   <div className="flex flex-col items-center">
                     <Contact></Contact>
                   </div>

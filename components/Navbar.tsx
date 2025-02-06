@@ -5,6 +5,7 @@ export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [text, setText] = useState("SkyRise Studios");
     const [isHovered, setIsHovered] = useState(false);
+    const [activeSection, setActiveSection] = useState<string>("");
 
     useEffect(() => {
         let typingEffect: any;
@@ -12,80 +13,67 @@ export default function Navbar() {
         const word = "Coming Soon";
 
         if (isHovered) {
-            // Removes Start Text
-            setText("");
-
+            setText(""); // Removes Start Text
             typingEffect = setInterval(() => {
                 if (index < word.length - 1) {
                     index++;  
-                    setText((prev) => prev + word[index]); // Adds next Character
+                    setText((prev) => prev + word[index]);
                 } else {
                     clearInterval(typingEffect); 
                 }
             }, 50); // velocity
         } else {
-            //returns to original text when not hovered
-            setText("SkyRise Studios");
+            setText("SkyRise Studios"); // Return to original text when not hovered
         }
 
-        // Limpeza do intervalo quando o efeito for removido ou o componente for desmontado
-        return () => clearInterval(typingEffect);
-    }, [isHovered]); // Reage a mudanças em `isHovered`
+        return () => clearInterval(typingEffect); // Cleanup on unmount or hover change
+    }, [isHovered]);
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50); // Altera quando rolar mais de 50px
+            setIsScrolled(window.scrollY > 50);
+            const sections = document.querySelectorAll("section");
+            sections.forEach((section: any) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - sectionHeight / 3 && window.scrollY < sectionTop + sectionHeight) {
+                    setActiveSection(section.id);
+                }
+            });
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     const navigation = [
-        {
-            name: "About US",
-            href: "#About",
-        },
-        {
-            name: "Previous Work",
-            href: "#Work",
-        },
-        {
-            name: "Our Services",
-            href: "#Services",
-        },
-        {
-            name: "Contact Us",
-            href: "#Joblist",
-        },
+        { name: "About US", href: "#About", id: "About" },
+        { name: "Case Studies", href: "#CaseStudies", id: "CaseStudies" },
+        { name: "Our Services", href: "#Services", id: "Services" },
+        { name: "Contact Us", href: "#Contacts", id: "Contacts" },
     ];
 
     return (
-        <div
-            className={`fixed left-[50%] -translate-x-[50%] top-0 w-screen z-50 hoverTransition   ${
-                isScrolled ? " mt-0" : " mt-[40px]"
-            }`}
-        >
+        <div className={`fixed left-[50%] -translate-x-[50%] top-0 w-screen z-50 hoverTransition ${isScrolled ? "mt-0" : "mt-[40px]"}`}>
             <div className="gridLayout lg:grid flex justify-center max-w-[1920px]">
                 <div className="xl:col-start-2 xl:col-span-9 col-span-full flex justify-between py-[20px]">
-                    <h2 className="text-[#DAE8FA] flex min-w-[220px]">
+                    <Link href="#Home"><h2 className="text-[#DAE8FA] flex min-w-[220px]">
                         SkyRise Labs / 
                         <span
                             className="text-[#606060] flex min-w-[110px]"
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
                         >
-                           {"\xa0"}{text}
+                            {"\xa0"}{text}
                         </span>
                     </h2>
+                    </Link>
                     <div className="lg:flex hidden">
                         {navigation.map((item, i) => (
                             <div key={i} className="flex items-center justify-center">
                                 <Link href={item.href}>
-                                    <h2 className="text-[#606060] hover:text-[#DAE8FA] hoverTransition">
+                                    <h2 className={`text-[#606060] hover:text-[#DAE8FA] hoverTransition ${activeSection === item.id ? "text-[#DAE8FA]" : ""}`}>
                                         {item.name}
-                                        {i < navigation.length - 1 && (
-                                            <span className="mx-2 text-[#606060]">/</span>
-                                        )}
+                                        {i < navigation.length - 1 && <span className="mx-2 text-[#606060]">/</span>}
                                     </h2>
                                 </Link>
                             </div>

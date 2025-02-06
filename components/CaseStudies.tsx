@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import SpotlightCard from "./SpotlightCard";
 import Link from "next/link";
 
-export default function OurWork(){
+export default function CaseStudies(){
 
     const title=useRef(null)    
     const titleInView = useInView(title, { once: true });
@@ -17,22 +17,22 @@ export default function OurWork(){
         {
             img:"IslandDao.svg",
             text:"[Event Design & Programming, Marketing & Content Strategy, OPERATIONAL EXCELLENCE]",
-            link:"https://x.com/islandDAO_DL"
+            link:"https://skyriselabs.notion.site/IslandDAO-Event-Case-Study-183c3624545780e89ba1c0d351dd3daf?pvs=25"
         },
         {
             img:"Carrot.svg",
             text:"[Educational Content Strategy, Community Building, Trust Building & Transparency]",
-            link:"https://x.com/DeFiCarrot"
+            link:"https://skyriselabs.notion.site/DeFi-Carrot-GTM-Case-Study-182c36245457815089addbe9fa99bf52"
         },
         {
             img:"Goated.svg",
             text:"[BRAND DEVELOPMENT, STRATEGY DEVELOPMENT, LAUNCH PREPARATION]",
-            link:"https://x.com/goatedcom"
+            link:"https://skyriselabs.notion.site/Goated-Branding-GTM-Case-Study-182c362454578083afa4c8d1fae9e783"
         },
         {
             img:"Mtndao.svg",
             text:"[CONTENT STRATEGY, COMMUNITY BUILDING, OPERATIONAL EXCELLENCE]",
-            link:"https://x.com/mtndao"
+            link:"https://skyriselabs.notion.site/mtnDAO-Event-Case-Study-182c3624545780c2ab73f44a8be7a212"
         }
 ]
     return(
@@ -43,7 +43,7 @@ export default function OurWork(){
                 initial={{ opacity:0, }}
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5 }}
-                className="text-center col-span-full">[PREVIOUS WORK]</motion.h2>
+                className="text-center col-span-full">[CASE STUDIES]</motion.h2>
                 <motion.h4
                 ref={title} 
                 initial={{ opacity:0, }}
