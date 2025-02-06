@@ -17,7 +17,7 @@ export default function WebsiteContent (){
         <>
         {!isLoading &&
             <div>
-              <section className="w-screen flex justify-center">
+              <section>
                 <Navbar></Navbar>
               </section>
 

@@ -60,20 +60,20 @@ export default function OurWork(){
             animate={ contentInView? { opacity:1,  } : {}} 
             transition={{ duration:0.5 }}
             className="gridLayout grid pt-[105px]">
-                <div className="xl:col-start-2 xl:col-span-9 col-span-full flex flex-wrap lg:gap-x-[1vw] lg:gap-y-[1vw] gap-y-[50px]">
+                <div className="xl:col-start-2 xl:col-span-9  lg:col-span-full sm:col-start-2 sm:col-span-4 col-span-full flex flex-wrap lg:gap-x-[1vw] lg:gap-y-[1vw] gap-y-[50px]">
                     {clients.map((client, i) =>(
-                        <div key={i} className="lg:w-[48%]">
+                        <div key={i} className="lg:w-[48%] w-full">
                             <SpotlightCard className="custom-spotlight-card " spotlightColor="rgba(239, 246, 254, 0.4)">
                                 <Link href={client.link} target="_blank">
                                 <div
                                     onMouseEnter={() => setIsHovered(i)}
                                     onMouseLeave={() => setIsHovered(null)} 
-                                    className={`${isHovered === i ? "border-[#EFF6FE00] border-[1px]" : "border-[1px] border-[#EFF6FE]"}  hoverTransition flex flex-col gap-y-[10px] justify-center items-center w-full py-[60px] h-[300px]`}
+                                    className={`${isHovered === i ? "border-[#EFF6FE00] border-[1px]" : "border-[1px] border-[#EFF6FE]"}  hoverTransition flex flex-col gap-y-[10px] justify-center items-center w-full lg:py-[60px] h-[300px] px-[10px] lg:px-0`}
                                 >
                                     <div className="flex flex-col items-center w-full">
-                                        <img className="w-[201px] h-[61px] object-contain" src={`/clients/${client.img}`}/>
+                                        <img className="lg:w-[201px] lg:h-[61px] object-contain" src={`/clients/${client.img}`}/>
                                         <div className="h-[1px] max-w-[280px] w-full bg-[#C8DDF8] mt-[25px] mb-[30px] mx-[90px]"/>
-                                        <h2 className="px-[50px] text-center uppercase">{client.text}</h2>
+                                        <h2 className="lg:px-[50px] text-center uppercase">{client.text}</h2>
                                     </div>
                                 </div>
                                 </Link>

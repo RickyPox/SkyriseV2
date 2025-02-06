@@ -36,7 +36,7 @@ export default function About(){
             animate={ contentInView? { opacity:1,  } : {}} 
             transition={{ duration:0.5 }}
             className="gridLayout grid pt-[105px]">
-                <div className="xl:col-start-2 xl:col-span-9 xl:grid xl:grid-cols-9 lg:col-start-3 lg:col-span-4 col-span-full flex flex-col xl:gap-x-[20px] xl:gap-y-0 gap-y-[50px]">
+                <div className="xl:col-start-2 xl:col-span-9 xl:grid xl:grid-cols-9 lg:col-start-3 lg:col-span-4 sm:col-start-2 sm:col-span-4 col-span-full flex flex-col xl:gap-x-[20px] xl:gap-y-0 gap-y-[50px]">
                     <div className="xl:col-span-3 col-span-full" >
                         <Counter title="[Total Clients]" total="5500"></Counter>
                     </div>
