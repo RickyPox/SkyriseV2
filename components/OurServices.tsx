@@ -59,8 +59,8 @@ export default function OurServices(){
   const contentInView = useInView(content, { once: true });
 
 return(
-    <div>
-         <div className='gridLayout grid relative'>
+    <div className="max-w-[1920px]">
+         <div className='gridLayout grid relative '>
                 <motion.h2 
                 ref={title} 
                 initial={{ opacity:0, }}

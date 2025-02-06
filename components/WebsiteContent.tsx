@@ -17,40 +17,57 @@ export default function WebsiteContent (){
         <>
         {!isLoading &&
             <div>
-              <section>
+              <section className="w-screen flex justify-center">
                 <Navbar></Navbar>
               </section>
+
               <section className="relative">
-                  <Landing></Landing>
+                  <div className="flex flex-col items-center">
+                    <Landing></Landing>
+                  </div>
                   <div className="absolute top-[50%] -translate-y-[50%] -translate-x-[50%] -z-20 pointer-events-none">
                     <Spotlight size="568"></Spotlight>
                   </div>
                 </section>
+
                 <section className="pt-[220px] relative" id="About">
-                  <About></About>
+                  <div className="flex flex-col items-center">
+                    <About></About>
+                  </div>
                   <div className="absolute top-[50%] -translate-y-[50%] right-0 translate-x-[50%] -z-20 pointer-events-none">
                     <Spotlight size="568"></Spotlight>
                   </div>
                 </section>
+
                 <section className="pt-[250px] relative" id="Work">
-                  <OurWork></OurWork>
+                  <div className="flex flex-col items-center">
+                    <OurWork></OurWork>
+                  </div>
                   <div className="absolute top-[50%] -translate-y-[50%] left-0 -translate-x-[50%] -z-20 pointer-events-none">
                     <Spotlight size="568"></Spotlight>
                   </div>
                 </section>
+
                 <section className="pt-[240px] relative" id="Services">
-                  <OurServices></OurServices>
+                  <div className="flex flex-col items-center">
+                    <OurServices></OurServices>
+                  </div>
                   <div className="absolute top-[50%] -translate-y-[50%] right-0 translate-x-[50%] -z-20 pointer-events-none">
                     <Spotlight size="568"></Spotlight>
                   </div>
                 </section>
+
                 <section className="pt-[230px] relative" id="Contact">
-                  <Contact></Contact>
-                  
+                  <div className="flex flex-col items-center">
+                    <Contact></Contact>
+                  </div>
                 </section>
-                <section className="pt-[330px] mb-[100px] relative">
-                  <Footer></Footer>
-                  <div className="absolute -bottom-[100%] left-[50%] -translate-x-[50%] -z-20 pointer-events-none">
+
+                <section className="pt-[330px] pb-[100px] relative overflow-y-hidden ">
+                  <div className="flex justify-center">
+                    <Footer></Footer>
+                  </div>
+                  <div className="absolute -bottom-[160%] left-[50%] -translate-x-[50%] -z-20 pointer-events-none">
                     <Spotlight size="568"></Spotlight>
                   </div>
                 </section>

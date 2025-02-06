@@ -34,19 +34,19 @@ export default function Navbar (){
 
 
     return(
-        <div className={`fixed top-0 left-0 w-full z-50 hoverTransition  ${isScrolled ? "bg-[#050505] mt-0" : "bg-transparent mt-[40px]"}`}>
-            <div className="gridLayout grid">
-                <div className="col-start-2 col-span-9 flex justify-between py-[20px]">
-                    <h2 className="text-[#DAE8FA]">SkyRise Labs / <span className="text-[#606060]">SkyRise Studios</span></h2>
-                    <div className="flex">
-                        {navigation.map((item, i) => (
-                        <div key={i} className="flex items-center justify-center">
-                            <Link href={item.href}><h2 className="text-[#606060] hover:text-[#DAE8FA] hoverTransition">{item.name}{i < navigation.length - 1 && <span className="mx-2 text-[#606060]">/</span>}</h2></Link>
-                        </div>
-                        ))}
-                        </div>
+            <div className={`fixed top-0 w-full z-50 hoverTransition max-w-[1920px]  ${isScrolled ? "bg-[#050505] mt-0" : "bg-transparent mt-[40px]"}`}>
+                <div className="gridLayout lg:grid flex justify-center">
+                    <div className="col-start-2 col-span-9 flex justify-between py-[20px]">
+                        <h2 className="text-[#DAE8FA]">SkyRise Labs / <span className="text-[#606060]">SkyRise Studios</span></h2>
+                        <div className="lg:flex hidden">
+                            {navigation.map((item, i) => (
+                            <div key={i} className="flex items-center justify-center">
+                                <Link href={item.href}><h2 className="text-[#606060] hover:text-[#DAE8FA] hoverTransition">{item.name}{i < navigation.length - 1 && <span className="mx-2 text-[#606060]">/</span>}</h2></Link>
+                            </div>
+                            ))}
+                            </div>
+                    </div>
                 </div>
             </div>
-        </div>
     )
 }

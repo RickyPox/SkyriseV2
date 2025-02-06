@@ -29,7 +29,7 @@ export default function Contact (){
     }
 
     return(
-        <div>
+        <div className="max-w-[1920px]">
             <div className='gridLayout grid relative'>
                 <motion.h2 
                 ref={title} 
@@ -53,11 +53,10 @@ export default function Contact (){
             initial="hidden"
             animate={buttonsInView ? "show" : "hidden"}
             className="flex lg:flex-row flex-col justify-center items-center gap-[30px] mt-[100px]">
-                <Link href="#" target="_blank">
                     <motion.div variants={children}>
-                        <Button color="#FDFDFD" title="Lorem Ipsum" size="big"/>
+                        <Button color="#EFF6FE" title="Lorem Ipsum" size="big" href="#"/>
                     </motion.div>
-                </Link>
+
             </motion.div>
         </div>
     )

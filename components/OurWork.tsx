@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import SpotlightCard from "./SpotlightCard";
+import Link from "next/link";
 
 export default function OurWork(){
 
@@ -16,22 +17,26 @@ export default function OurWork(){
         {
             img:"IslandDao.svg",
             text:"[Event Design & Programming, Marketing & Content Strategy, OPERATIONAL EXCELLENCE]",
+            link:"https://x.com/islandDAO_DL"
         },
         {
             img:"Carrot.svg",
             text:"[Educational Content Strategy, Community Building, Trust Building & Transparency]",
+            link:"https://x.com/DeFiCarrot"
         },
         {
             img:"Goated.svg",
             text:"[BRAND DEVELOPMENT, STRATEGY DEVELOPMENT, LAUNCH PREPARATION]",
+            link:"https://x.com/goatedcom"
         },
         {
             img:"Mtndao.svg",
             text:"[CONTENT STRATEGY, COMMUNITY BUILDING, OPERATIONAL EXCELLENCE]",
+            link:"https://x.com/mtndao"
         }
 ]
     return(
-        <div>
+        <div className=" max-w-[1920px]">
             <div className='gridLayout grid relative'>
                 <motion.h2 
                 ref={title} 
@@ -59,17 +64,19 @@ export default function OurWork(){
                     {clients.map((client, i) =>(
                         <div key={i} className="lg:w-[48%]">
                             <SpotlightCard className="custom-spotlight-card " spotlightColor="rgba(239, 246, 254, 0.4)">
+                                <Link href={client.link} target="_blank">
                                 <div
                                     onMouseEnter={() => setIsHovered(i)}
                                     onMouseLeave={() => setIsHovered(null)} 
-                                    className={`${isHovered === i ? "border-[#EFF6FE00] border-[1px]" : "border-[1px] border-[#EFF6FE]"}  hoverTransition flex flex-col gap-y-[10px] justify-center items-center w-full py-[24px] h-[300px]`}
+                                    className={`${isHovered === i ? "border-[#EFF6FE00] border-[1px]" : "border-[1px] border-[#EFF6FE]"}  hoverTransition flex flex-col gap-y-[10px] justify-center items-center w-full py-[60px] h-[300px]`}
                                 >
-                                    <div className="flex flex-col">
-                                        <img className="px-[120px] h-[50px] object-contain" src={`/clients/${client.img}`}/>
-                                        <div className="h-[1px] bg-[#C8DDF8] mt-[25px] mb-[30px] mx-[90px]"/>
+                                    <div className="flex flex-col items-center w-full">
+                                        <img className="w-[201px] h-[61px] object-contain" src={`/clients/${client.img}`}/>
+                                        <div className="h-[1px] max-w-[280px] w-full bg-[#C8DDF8] mt-[25px] mb-[30px] mx-[90px]"/>
                                         <h2 className="px-[50px] text-center uppercase">{client.text}</h2>
                                     </div>
                                 </div>
+                                </Link>
                             </SpotlightCard>
                         </div>
                     ))}

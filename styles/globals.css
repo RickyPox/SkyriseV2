@@ -73,6 +73,9 @@ p{
   transition: all 0.3s ease-in-out;
 }
 
+.clip-bottom {
+  clip-path: inset(-5000px -5000px 500px -5000px)
+}
 
 
 @media (min-width: 1024px){
