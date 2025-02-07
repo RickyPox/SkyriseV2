@@ -31,7 +31,7 @@ export default function OurServices(){
   };
   const services = [
     {
-      title:"Growth & User Acquisition",
+      title:"Connect & Grow",
       text:"Our primary focus is, on driving growth by implementing strategies to attract and retain customers. Through the use of data driven insights and innovative marketing methods we ensure that your business expands efficiently and successfully.",
       img:"Growth.png"
     },
@@ -46,9 +46,9 @@ export default function OurServices(){
       img:"Community.png"
     },
     {
-      title:"Storytelling",
+      title:"Activate & Engage",
       text:"We strongly believe in the impact of storytelling to form connections with your audience. Our storytelling approach helps communicate your brands message in a manner that resonates emotionally leaving an impression, on your customers.",
-      img:"Storytelling.png"
+      img:"Activate.png"
     },
   ]
 
@@ -73,7 +73,7 @@ return(
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5, delay:0.2 }}
                 className="xl:col-start-3 xl:col-span-7 col-start-1 col-span-full text-center">
-                    Lorem ipsum dolor sit amet consectetur. Rutrum ultrices est ultrices tortor odio congue eget. Sed dictum fringilla nisl proin integer consectetur maecenas.
+                    We provide comprehensive solutions tailored to your project's unique needs. Through our proven methodology, we connect, activate, and elevate your brand or product in the Web3 space.
                 </motion.h4>
             </div>
         <motion.div 
@@ -89,7 +89,7 @@ return(
                 onMouseEnter={() => handleMouseEnter(i)}
                 onMouseLeave={handleMouseLeave} key={i} className={`flex flex-col gap-[10px] items-center justify-center mb-[60px] text-center col-start-1 col-span-full 425:col-start-2 425:col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-span-4`}>
                   <img src={`/${item.img}`}/>
-                  <h2>{item.title}</h2>
+                  <h4>{item.title}</h4>
                   <p>{item.text}</p>
               </ServiceContainer>
           ))}

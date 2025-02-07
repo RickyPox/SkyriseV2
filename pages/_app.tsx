@@ -7,13 +7,13 @@ export default function App({ Component, pageProps }: AppProps) {
     <div>
       <Head>
   <title>SkyRiseLabs</title>
-  <meta name="description" content="Accelerating, Growing and Activating your favourite Web3 projects." />
+  <meta name="description" content="Leading Solana & Web3 growth agency driving mainstream adoption through strategic marketing, brand development, and event activation. Turn your vision into reality." />
   
   {/* Open Graph / Facebook / Discord */}
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://skyriselabs.io/" />
   <meta property="og:title" content="SkyRiseLabs" />
-  <meta property="og:description" content="Accelerating, Growing and Activating your favourite Web3 projects." />
+  <meta property="og:description" content="Leading Solana & Web3 growth agency driving mainstream adoption through strategic marketing, brand development, and event activation. Turn your vision into reality." />
   <meta property="og:image" content="/MetaImage.png" />
 
   <meta property="theme-color" content="#C8DDF8" />
@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://skyriselabs.io/" />
   <meta name="twitter:title" content="SkyRiseLabs" />
-  <meta name="twitter:description" content="Accelerating, Growing and Activating your favourite Web3 projects." />
+  <meta name="twitter:description" content="Leading Solana & Web3 growth agency driving mainstream adoption through strategic marketing, brand development, and event activation. Turn your vision into reality." />
   <meta name="twitter:image" content="/MetaImage.png" />
 </Head>
     <Component {...pageProps}/>

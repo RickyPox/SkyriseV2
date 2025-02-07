@@ -27,7 +27,7 @@ export default function About(){
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5, delay:0.2 }}
                 className="xl:col-start-3 xl:col-span-7 col-start-1 col-span-full text-center">
-                    Lorem ipsum dolor sit amet consectetur. Rutrum ultrices est ultrices tortor odio congue eget. Sed dictum fringilla nisl proin integer consectetur maecenas.
+                    We empower Web3's brightest projects with the tools, strategies, and connections needed to drive lasting mainstream adoption. Through strategic growth, creative excellence, and deep ecosystem expertise, we're building the bridges that Web3 needs to go mainstream.
                 </motion.h4>
             </div>
             <motion.div

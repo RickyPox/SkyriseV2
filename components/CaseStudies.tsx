@@ -50,7 +50,7 @@ export default function CaseStudies(){
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5, delay:0.2 }}
                 className="xl:col-start-3 xl:col-span-7 col-start-1 col-span-full text-center">
-                    Lorem ipsum dolor sit amet consectetur. Rutrum ultrices est ultrices tortor odio congue eget. Sed dictum fringilla nisl proin integer consectetur maecenas.
+                    As both advocates and challengers in the Web3 space, we combine strategic insight with creative execution to transform innovative projects into mainstream success stories.
                 </motion.h4>
             </div>
 

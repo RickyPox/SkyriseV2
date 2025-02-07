@@ -43,7 +43,7 @@ export default function Contact (){
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5, delay:0.2 }}
                 className="xl:col-start-3 xl:col-span-7 col-start-1 col-span-full text-center">
-                    Lorem ipsum dolor sit amet consectetur. Rutrum ultrices est ultrices tortor odio congue eget. Sed dictum fringilla nisl proin integer consectetur maecenas.
+                    “Whether you’re looking to launch, scale, or transform your Web3 project, we can help turn your vision into reality.”
                 </motion.h4>
             </div>
 
@@ -54,7 +54,7 @@ export default function Contact (){
             animate={buttonsInView ? "show" : "hidden"}
             className="flex lg:flex-row flex-col justify-center items-center gap-[30px] mt-[100px]">
                     <motion.div variants={children}>
-                        <Button color="#EFF6FE" title="Lorem Ipsum" href="#"/>
+                        <Button color="#EFF6FE" title="Get in Touch" href="mailto:jonah@skyriselabs.io"/>
                     </motion.div>
 
             </motion.div>

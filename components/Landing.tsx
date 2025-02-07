@@ -19,9 +19,9 @@ export default function Landing (){
             <img className="min-w-[1250px] min-h-[700px] -z-30" src="/LandingBg.png"></img>
             <div className="absolute text-center flex flex-col justify-center items-center">
                 <h1>Connecting Ideas</h1>
-                <h3 className="text-[#C8DDF8]">Connecting and Growing Ideas - from 0 to 1.</h3>
+                <h3 className="text-[#C8DDF8]">Building bridges between Web3 and mainstream adoption</h3>
             </div>
-            <div className="absolute top-[62%]"><Button title="Get To Know Us" href="#" color="#EFF6FE"></Button></div>
+            <div className="absolute top-[62%]"><Button title="Get To Know Us" href="mailto:jonah@skyriselabs.io" color="#EFF6FE"></Button></div>
         </motion.div>
 
         </div>
