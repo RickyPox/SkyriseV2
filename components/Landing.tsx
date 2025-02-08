@@ -10,12 +10,12 @@ export default function Landing (){
     const inView = useInView(view, { once: true });
 
     return(
-        <div className="relative max-w-[1920px]">
+        <div className="relative max-w-[1920px] gridLayout grid overflow-x-hidden">
         <motion.div ref={view} 
         initial={{ opacity:0}}
         animate={ inView? { opacity:1} : {}} 
         transition={{ duration:0.5 }}
-        className="flex flex-col items-center relative overflow-hidden">
+        className="flex flex-col items-center relative overflow-hidden col-span-full">
             <img className="min-w-[1250px] min-h-[1080px] -z-30" src="/LandingBg.png"></img>
             <div className="absolute mt-[330px] text-center flex flex-col justify-center items-center">
                 <h1>Connecting Worlds</h1>
