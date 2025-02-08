@@ -30,7 +30,7 @@ export default function WebsiteContent (){
                     <Spotlight size="568"></Spotlight>
                   </div>
 
-                  <div className="-mt-[140px] relative z-10">
+                  <div className="-mt-[300px] relative z-10">
                     <MarqueeSlider></MarqueeSlider>
                     <MarqueeSlider direction="right" reverse="true"></MarqueeSlider>
                   </div>

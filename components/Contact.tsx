@@ -43,7 +43,7 @@ export default function Contact (){
                 animate={ titleInView? { opacity:1,  } : {}} 
                 transition={{ duration:0.5, delay:0.2 }}
                 className="xl:col-start-3 xl:col-span-7 col-start-1 col-span-full text-center">
-                    “Whether you’re looking to launch, scale, or transform your Web3 project, we can help turn your vision into reality.”
+                    Whether you’re looking to launch, scale, or transform your Web3 project, we can help turn your vision into reality.
                 </motion.h4>
             </div>
 
