@@ -26,6 +26,9 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </Script>
 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+
   {/* Open Graph / Facebook / Discord */}
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://skyriselabs.io/" />
