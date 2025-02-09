@@ -17,7 +17,7 @@ export default function WebsiteContent (){
     return(
         <>
         {!isLoading &&
-            <div>
+            <div className="overflow-x-hidden">
               <section className="relative">
                 <Navbar></Navbar>
               </section>

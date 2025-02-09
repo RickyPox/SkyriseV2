@@ -13,6 +13,7 @@ body{
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden!important;
 }
 
 h1{ /* Big Title */
