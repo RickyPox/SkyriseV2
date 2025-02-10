@@ -17,7 +17,7 @@ export default function Landing (){
         transition={{ duration:0.5 }}
         className="flex flex-col items-center relative overflow-hidden col-span-full">
             <img className="min-w-[1250px] min-h-[1080px] -z-30" src="/LandingBg.png"></img>
-            <div className="absolute mt-[330px] text-center flex flex-col justify-center items-center">
+            <div className="absolute mt-[330px] text-center flex flex-col justify-center items-center gap-[20px]">
                 <h1>Connecting Worlds</h1>
                 <h3 className="text-[#C8DDF8]">Building bridges between Web3 and mainstream adoption</h3>
             </div>

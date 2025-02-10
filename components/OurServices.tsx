@@ -33,22 +33,22 @@ export default function OurServices(){
     {
       title:"Connect & Grow",
       text:"Our primary focus is, on driving growth by implementing strategies to attract and retain customers. Through the use of data driven insights and innovative marketing methods we ensure that your business expands efficiently and successfully.",
-      img:"Growth.png"
+      img:"Growth.svg"
     },
     {
       title:"Branding & Design",
       text:"Developing a captivating and strategized brand is central to our work. Our team specializes in strategizing and designing visuals that not grab attention but also effectively convey your brands value creating a memorable impression on your target audience.",
-      img:"Branding.png"
+      img:"Branding.svg"
     },
     {
       title:"Community Engagement",
       text:"Establishing a community is crucial for sustained success. We assist in nurturing connections with your audience transforming followers into dedicated advocates who genuinely support your brand.",
-      img:"Community.png"
+      img:"Community.svg"
     },
     {
       title:"Activate & Engage",
       text:"We strongly believe in the impact of storytelling to form connections with your audience. Our storytelling approach helps communicate your brands message in a manner that resonates emotionally leaving an impression, on your customers.",
-      img:"Activate.png"
+      img:"Activate.svg"
     },
   ]
 
