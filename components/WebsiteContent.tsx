@@ -18,7 +18,7 @@ export default function WebsiteContent (){
         <>
         {!isLoading &&
             <div className="overflow-x-hidden">
-              <section className="relative">
+              <section className="relative flex justify-center">
                 <Navbar></Navbar>
               </section>
 

@@ -53,8 +53,8 @@ export default function Navbar() {
     ];
 
     return (
-        <div className={`fixed left-[50%] -translate-x-[50%] top-0 w-screen z-50 hoverTransition ${isScrolled ? "mt-0" : "mt-[40px]"}`}>
-            <div className="gridLayout lg:grid flex justify-center max-w-[1920px]">
+
+            <div className={` gridLayout lg:grid flex justify-center w-full max-w-[1920px] hoverTransition z-50 ${isScrolled ? "mt-0" : "mt-[40px]"}`}>
                 <div className="xl:col-start-2 xl:col-span-9 col-span-full flex justify-between py-[20px]">
                     <Link href="#Home"><h2 className="text-[#DAE8FA] flex min-w-[220px]">
                         SkyRise Labs / 
@@ -81,6 +81,5 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-        </div>
     );
 }
