@@ -53,9 +53,8 @@ export default function Navbar() {
     ];
 
     return (
-
-            <div className={`gridLayout lg:grid flex justify-center w-full max-w-[1920px] hoverTransition z-50 ${isScrolled ? "mt-0" : "mt-[40px]"}`}>
-                <div className="xl:col-start-2 xl:col-span-9 col-span-full flex justify-between py-[20px]">
+            <div className={`gridLayout lg:grid mx- flex justify-center w-full max-w-[1920px] hoverTransition z-50 fixed ${isScrolled ? "lg:top-[0px] top-[20px]" : "lg:top-[20px] top-[60px]"}`}>
+                <div className="xl:col-start-2 xl:col-span-9 lg:col-start-2 lg:col-span-6 col-span-full flex justify-between py-[20px]">
                     <Link href="#Home"><h2 className="text-[#DAE8FA] flex justify-center lg:justify-start min-w-[220px]">
                         SkyRise Labs / 
                         <span
