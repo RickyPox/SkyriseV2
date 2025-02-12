@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import SpotlightCard from './SpotlightCard';
 
 const useHasMounted = () => {
@@ -12,7 +12,7 @@ const useHasMounted = () => {
     return hasMounted;
 };
 
-export default function Counter(props: { total: number; title: string; delay?: number }) {
+export default function Counter(props: { total: number; title: string; delay?: number, after?: string, before?: string }) {
     const [count, setCount] = useState(0);
     const ref = useRef(null);
     const isInView = useInView(ref, { margin: "-20% 0px -20% 0px", once: true });
@@ -22,7 +22,7 @@ export default function Counter(props: { total: number; title: string; delay?: n
         if (!isInView || !hasMounted) return;
 
         const end = props.total;
-        const duration = 4000;
+        const duration = 1000;
         const delay = (props.delay ? props.delay * 1000 : 0); 
 
         const startAnimation = () => {
@@ -53,7 +53,17 @@ export default function Counter(props: { total: number; title: string; delay?: n
                 className="border-[1px] hoverTransition flex flex-col gap-y-[10px] justify-center items-center w-full py-[24px]"
             >
                 <h2>{props.title}</h2>
-                <h5>{count}+</h5>
+                <h5>
+                    <motion.span 
+                    initial={{ opacity:0 }}
+                    animate={{ opacity: count === props.total ? 1 : 0 }}
+                    transition={{ duration: 1 }}>
+                        {count === props.total && props.before}</motion.span>
+                    {count}
+                    <motion.span
+                    initial={{ opacity:0 }}
+                    animate={{ opacity: count === props.total ? 1 : 0 }}
+                    transition={{ duration: 1 }}>{count === props.total && props.after}</motion.span>+</h5>
             </div>
         </SpotlightCard>
     );
