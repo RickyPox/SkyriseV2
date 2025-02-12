@@ -38,13 +38,13 @@ export default function About(){
             className="gridLayout grid pt-[105px]">
                 <div className="xl:col-start-2 xl:col-span-9 xl:grid xl:grid-cols-9 lg:col-start-3 lg:col-span-4 sm:col-start-2 sm:col-span-4 col-span-full flex flex-col xl:gap-x-[20px] xl:gap-y-0 gap-y-[50px]">
                     <div className="xl:col-span-3 col-span-full" >
-                        <Counter title="[Total Clients]" total={10} delay={0} after="M"></Counter>
+                        <Counter title="[Total Impressions]" total={10} delay={0} after="M"></Counter>
+                    </div> 
+                    <div className="xl:col-span-3 col-span-full">
+                        <Counter title="[Revenue Generated]" total={10} delay={1} before="$" after="M"></Counter>
                     </div>
                     <div className="xl:col-span-3 col-span-full">
-                        <Counter title="[Projects Developed]" total={10} delay={1} before="$" after="M"></Counter>
-                    </div>
-                    <div className="xl:col-span-3 col-span-full">
-                        <Counter title="[Engagement Generated]" total={100} delay={2}></Counter>
+                        <Counter title="[Projects Accelerated]" total={100} delay={2}></Counter>
                     </div>
                 </div>
             </motion.div>
