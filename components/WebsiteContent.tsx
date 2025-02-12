@@ -70,7 +70,7 @@ export default function WebsiteContent (){
                   </div>
                 </section>
 
-                <section className="pt-[330px] pb-[100px] relative overflow-y-hidden ">
+                <section className="pt-[330px] pb-[100px] relative overflow-hidden ">
                   <div className="flex justify-center">
                     <Footer></Footer>
                   </div>
