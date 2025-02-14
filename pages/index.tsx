@@ -1,5 +1,5 @@
-import { LoadingProvider } from "@/components/LoadingContext";
-import LoadingVideo from "@/components/LoadingVideo";
+// import { LoadingProvider } from "@/components/LoadingContext";
+// import LoadingVideo from "@/components/LoadingVideo";
 import WebsiteContent from "@/components/WebsiteContent";
 import Head from "next/head";
 
@@ -16,10 +16,10 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="/favicon.png"/>
 
       </Head>
-      <LoadingProvider>
-        <LoadingVideo></LoadingVideo>
+      {/* <LoadingProvider> */}
+        {/* <LoadingVideo></LoadingVideo> */}
         <WebsiteContent></WebsiteContent>
-      </LoadingProvider>
+      {/* </LoadingProvider> */}
 
     </div>
   )

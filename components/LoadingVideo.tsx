@@ -1,4 +1,4 @@
-import { useLoading } from "./LoadingContext";
+/* import { useLoading } from "./LoadingContext";
 
 
 export default function LoadingVideo() {
@@ -20,3 +20,4 @@ export default function LoadingVideo() {
         </>
     );
 }
+ */

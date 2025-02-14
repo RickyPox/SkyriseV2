@@ -1,7 +1,7 @@
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import { useLoading } from "./LoadingContext";
+// import { useLoading } from "./LoadingContext";
 import Navbar from "./Navbar";
 import OurServices from "./OurServices";
 import CaseStudies from "./CaseStudies";
@@ -12,11 +12,11 @@ import MarqueeSlider from "./MarqueeSlider";
 export default function WebsiteContent (){
 
     
-  const { isLoading } = useLoading();
+  // const { isLoading } = useLoading();
   
     return(
         <>
-        {!isLoading &&
+        {/* {!isLoading && */}
             <div className="overflow-x-hidden">
               <section className="relative flex justify-center">
                 <Navbar></Navbar>
@@ -79,7 +79,7 @@ export default function WebsiteContent (){
                   </div>
                 </section>
               </div> 
-              }
+              {/* } */}
               </>
     )
 }
