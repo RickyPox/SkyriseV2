@@ -82,16 +82,15 @@ return(
           animate={ contentInView ? { opacity:1,  } : {}} 
           transition={{ duration:0.5 }}
           className="gridLayout pt-[110px] flex flex-col 425:grid">
-          <div className="xl:col-start-2 xl:col-span-9 xl:grid xl:grid-cols-9 lg:col-start-3 lg:col-span-4 sm:col-start-2 sm:col-span-4 col-span-full flex flex-col xl:gap-x-[20px] xl:gap-y-0 gap-y-[50px]">
+          <div className="xl:col-start-2 xl:col-span-9 xl:flex xl:flex-row xl:flex-wrap xl:justify-between lg:col-start-3 lg:col-span-4 sm:col-start-2 sm:col-span-4 col-span-full flex flex-col xl:gap-x-[20px] xl:gap-y-0 gap-y-[50px]">
           {services.map((item, i) =>(
-              <ServiceContainer
-                index={i}  
+              <div
                 onMouseEnter={() => handleMouseEnter(i)}
-                onMouseLeave={handleMouseLeave} key={i} className={`flex flex-col gap-[10px] items-center justify-center mb-[60px] text-center col-start-1 col-span-full 425:col-start-2 425:col-span-6 lg:col-start-3 lg:col-span-4 2xl:col-span-4`}>
+                onMouseLeave={handleMouseLeave} key={i} className={`flex flex-col gap-[10px] items-center justify-center mb-[60px] text-center col-start-1 col-span-full 425:col-start-2 425:col-span-6 xl:w-[44%]`}>
                   <img src={`/${item.img}`}/>
                   <h4>{item.title}</h4>
                   <p>{item.text}</p>
-              </ServiceContainer>
+              </div>
           ))}
           </div>
         </motion.div>

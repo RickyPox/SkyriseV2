@@ -22,7 +22,7 @@ export default function WebsiteContent (){
                 <Navbar></Navbar>
               </section>
 
-              <section className="relative" id="Home">
+              <section className="relative -mt-[40%] sm:mt-0" id="Home">
                   <div className="flex flex-col items-center">
                     <Landing></Landing>
                   </div>
@@ -30,7 +30,7 @@ export default function WebsiteContent (){
                     <Spotlight size="568"></Spotlight>
                   </div>
 
-                  <div className="-mt-[300px] relative z-10">
+                  <div className="lg:-mt-[300px] -mt-[400px] relative z-10">
                     <MarqueeSlider></MarqueeSlider>
                     <MarqueeSlider direction="right" reverse="true"></MarqueeSlider>
                   </div>
