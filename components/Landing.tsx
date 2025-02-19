@@ -18,7 +18,7 @@ export default function Landing (){
                 transition={{ duration: 0.5 }}
                 className="relative flex flex-col items-center h-full w-screen"
             >
-                 <img className="absolute h-full object-cover -z-30" src="/Landing.png"></img>
+                <img className="absolute h-full object-cover" src="/Landing.png"></img>
                 <div className="absolute bg-gradient-to-r from-[#05050500] to-[#050505] left-0 top-0 h-full w-1/2 -z-20"/>
                 <div className="absolute bg-gradient-to-l from-[#05050500] to-[#050505] right-0 top-0 h-full w-1/2 -z-20"/>
                 <div className="absolute lg:top-1/2 top-[40%] -translate-y-1/2 text-center flex flex-col justify-center items-center gap-y-[20px]">
