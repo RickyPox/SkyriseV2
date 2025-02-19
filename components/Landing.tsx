@@ -18,16 +18,19 @@ export default function Landing (){
                 transition={{ duration: 0.5 }}
                 className="relative flex flex-col items-center h-full w-screen"
             >
-                <div className="absolute top-1/2 -translate-y-1/2 text-center flex flex-col justify-center items-center gap-y-[20px]">
+                 <img className="absolute min-w-[1250px] w-screen h-screen lg:min-h-[1080px] object-cover -z-30" src="/LandingBg.png"></img>
+                <div className="absolute bg-gradient-to-r from-[#05050500] to-[#050505] left-0 top-0 h-full w-1/2 -z-20"/>
+                <div className="absolute bg-gradient-to-l from-[#05050500] to-[#050505] right-0 top-0 h-full w-1/2 -z-20"/>
+                <div className="absolute lg:top-1/2 top-[40%] -translate-y-1/2 text-center flex flex-col justify-center items-center gap-y-[20px]">
                     <h1>Connecting Worlds</h1>
                     <h3 className="text-[#C8DDF8]">Building bridges between Web3 and mainstream adoption</h3>
                 </div>
-                <div className="absolute top-[65%] -translate-y-1/2 text-center "> 
+                <div className="absolute lg:top-[50%] top-[35%] mt-[180px] -translate-y-1/2 text-center "> 
                     <Button title="Get to know us" href="#About" color="#EFF6FE"/>
                 </div>
-                <div className="mt-auto mb-[20px]">
-                <MarqueeSlider></MarqueeSlider>
-                <MarqueeSlider direction="right" reverse="true"></MarqueeSlider>
+                <div className="mt-auto mb-[3vh] z-20">
+                    <MarqueeSlider></MarqueeSlider>
+                    <MarqueeSlider direction="right" reverse="true"></MarqueeSlider>
                 </div>
 
             </motion.div>
