@@ -24,10 +24,11 @@ export default function Landing (){
                 <div className="absolute lg:top-1/2 top-[40%] -translate-y-1/2 text-center flex flex-col justify-center items-center gap-y-[20px]">
                     <h1>Connecting Worlds</h1>
                     <h3 className="text-[#C8DDF8]">Building bridges between Web3 and mainstream adoption</h3>
-                </div>
-                <div className="absolute lg:top-[50%] top-[35%] mt-[180px] -translate-y-1/2 text-center "> 
+                    <div className="mt-[60px]"> 
                     <Button title="Get to know us" href="#About" color="#EFF6FE"/>
                 </div>
+                </div>
+                
                 <div className="mt-auto mb-[3vh] z-20">
                     <MarqueeSlider></MarqueeSlider>
                     <MarqueeSlider direction="right" reverse="true"></MarqueeSlider>

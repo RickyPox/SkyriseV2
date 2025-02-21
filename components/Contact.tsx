@@ -52,7 +52,7 @@ export default function Contact (){
             variants={container}
             initial="hidden"
             animate={buttonsInView ? "show" : "hidden"}
-            className="flex lg:flex-row flex-col justify-center items-center gap-[30px] mt-[100px]">
+            className="flex lg:flex-row flex-col justify-center items-center gap-[30px] mt-[60px]">
                     <motion.div variants={children}>
                         <Button color="#EFF6FE" title="Get in Touch" href="mailto:jonah@skyriselabs.io"/>
                     </motion.div>
