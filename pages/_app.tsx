@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from "next/script";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -13,12 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Leading Solana & Web3 growth agency driving mainstream adoption through strategic marketing, brand development, and event activation. Turn your vision into reality."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-
-
-         {/* Google Analytics */}
-      
-         <GoogleAnalytics gaId="G-JM8WE01GDG" />
-
+        
         {/* Open Graph / Facebook / Discord */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://skyriselabs.io/" />
@@ -41,7 +36,25 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:image" content="/MetaImage.png" />
       </Head>
 
-     
+      {/* Google Analytics - Usando Script diretamente */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-JM8WE01GDG`}
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JM8WE01GDG', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
 
       <Component {...pageProps} />
     </div>
