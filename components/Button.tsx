@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { useState } from "react"
 import styled from "styled-components"
+import { sendGAEvent } from '@next/third-parties/google'
 
 export default function Button (props:any){
 
@@ -20,10 +21,13 @@ export default function Button (props:any){
 
     return(
         <Link href={props.href ? props.href : "#"}>
-            <div onClick={() => {setTimeout(() => setIsHover(false), 100); }}  onMouseEnter={handleHover} onMouseLeave={handleHover} className="relative w-[210px] lg:w-[225px] py-[15px] flex gap-[10px] justify-center z-20"
-            style={{ 
-                border: `solid 1px ${props.color}`
-            }}>
+            <div   onClick={() => {sendGAEvent({ event: "buttonClicked", value: "xyz" });
+                setTimeout(() => setIsHover(false), 100);}}  
+                onMouseEnter={handleHover} onMouseLeave={handleHover} className="relative w-[210px] lg:w-[225px] py-[15px] flex gap-[10px] justify-center z-20"
+                style={{ 
+                    border: `solid 1px ${props.color}`
+                }}
+            >
             <Text color={props.color} className="hoverTransition">{props.title}</Text>
                 <div className={`flex items-center`}>
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
