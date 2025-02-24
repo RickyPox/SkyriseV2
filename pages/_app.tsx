@@ -2,8 +2,9 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -18,19 +19,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
 
          {/* Google Analytics (apenas se a variável estiver definida) */}
-      {GA_TRACKING_ID && (
-        <>
-          <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA_TRACKING_ID}', { page_path: window.location.pathname });
-            `}
-          </Script>
-        </>
-      )}
+      
+         <GoogleAnalytics gaId={GA_TRACKING_ID} />
 
         {/* Open Graph / Facebook / Discord */}
         <meta property="og:type" content="website" />
