@@ -4,6 +4,9 @@ import Head from "next/head";
 import Script from "next/script";
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+
   return (
     <div>
       <Head>
@@ -36,10 +39,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:image" content="/MetaImage.png" />
       </Head>
 
-      {/* Google Analytics - Usando Script diretamente */}
+      {/* Google Analytics */}
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-JM8WE01GDG`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
       />
       <Script
         id="google-analytics"
@@ -49,7 +52,7 @@ export default function App({ Component, pageProps }: AppProps) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-JM8WE01GDG', {
+            gtag('config', '${GA_ID}', {
               page_path: window.location.pathname,
             });
           `,
