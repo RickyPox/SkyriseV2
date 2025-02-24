@@ -1,10 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import Script from "next/script";
 import { GoogleAnalytics } from '@next/third-parties/google'
-
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -18,9 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
 
-         {/* Google Analytics (apenas se a variável estiver definida) */}
+         {/* Google Analytics */}
       
-         <GoogleAnalytics gaId={GA_TRACKING_ID} />
+         <GoogleAnalytics gaId="G-JM8WE01GDG" />
 
         {/* Open Graph / Facebook / Discord */}
         <meta property="og:type" content="website" />
