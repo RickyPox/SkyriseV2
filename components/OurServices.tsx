@@ -37,7 +37,7 @@ export default function OurServices(){
     },
     {
       title:"Branding & Design",
-      text:"Developing a captivating and strategized brand is central to our work. Our team specializes in strategizing and designing visuals that not grab attention but also effectively convey your brands value creating a memorable impression on your target audience.",
+      text:"Developing a captivating and strategized brand is central to our work. Our team specializes in strategizing and designing visuals that not only grab attention but also effectively convey your brands value creating a memorable impression on your target audience.",
       img:"Branding.svg"
     },
     {

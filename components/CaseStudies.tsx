@@ -17,22 +17,22 @@ export default function CaseStudies(){
         {
             img:"IslandDao.svg",
             text:"[Event Design & Programming, Marketing & Content Strategy, OPERATIONAL EXCELLENCE]",
-            link:"https://skyriselabs.notion.site/IslandDAO-Event-Case-Study-183c3624545780e89ba1c0d351dd3daf?pvs=25"
+            link:"https://drive.google.com/file/d/1ZuFn7-EjK-DtaWi-OjbOdnQZ2se_C6St/view"
         },
         {
             img:"Carrot.svg",
             text:"[Educational Content Strategy, Community Building, Trust Building & Transparency]",
-            link:"https://skyriselabs.notion.site/DeFi-Carrot-GTM-Case-Study-182c36245457815089addbe9fa99bf52"
+            link:"https://drive.google.com/file/d/1cx33WHseFYlAvipDqR8bUEwOgLOA_Pjv/view"
         },
         {
-            img:"Goated.svg",
-            text:"[BRAND DEVELOPMENT, STRATEGY DEVELOPMENT, LAUNCH PREPARATION]",
-            link:"https://skyriselabs.notion.site/Goated-Branding-GTM-Case-Study-182c362454578083afa4c8d1fae9e783"
+            img:"Flash.svg",
+            text:"[FOUNDATION BUILDING, PARTNERSHIP ACTIVATION, LAUNCH PREPARATION]",
+            link:"https://drive.google.com/file/d/1N8dU3_Gm17IZSpv1V5T56ZG5Ayy_O7Ye/view"
         },
         {
             img:"Mtndao.svg",
             text:"[CONTENT STRATEGY, COMMUNITY BUILDING, OPERATIONAL EXCELLENCE]",
-            link:"https://skyriselabs.notion.site/mtnDAO-Event-Case-Study-182c3624545780c2ab73f44a8be7a212"
+            link:"https://drive.google.com/file/d/1ZuFn7-EjK-DtaWi-OjbOdnQZ2se_C6St/view"
         }
 ]
     return(
