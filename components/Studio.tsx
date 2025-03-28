@@ -121,6 +121,7 @@ export default function Studio() {
                                 spotlightColor="rgba(239, 246, 254, 0.4)"
                             >
                                 <img
+                                    className="aspect-video"
                                     src={`/studio/${item.img}`}
                                     alt={`video_${i + 1}`}
                                 />

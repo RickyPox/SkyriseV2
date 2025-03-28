@@ -39,20 +39,20 @@ export default function WebsiteContent() {
                     </div>
                 </section>
 
-                <section className="pt-[250px] relative" id="CaseStudies">
-                    <div className="flex flex-col items-center">
-                        <CaseStudies></CaseStudies>
-                    </div>
-                    <div className="absolute top-[50%] -translate-y-[50%] left-0 -translate-x-[50%] -z-20 pointer-events-none">
-                        <Spotlight size="568"></Spotlight>
-                    </div>
-                </section>
-
                 <section className="pt-[240px] relative" id="Services">
                     <div className="flex flex-col items-center">
                         <OurServices></OurServices>
                     </div>
                     <div className="absolute top-[50%] -translate-y-[50%] right-0 translate-x-[50%] -z-20 pointer-events-none">
+                        <Spotlight size="568"></Spotlight>
+                    </div>
+                </section>
+
+                <section className="pt-[250px] relative" id="CaseStudies">
+                    <div className="flex flex-col items-center">
+                        <CaseStudies></CaseStudies>
+                    </div>
+                    <div className="absolute top-[50%] -translate-y-[50%] left-0 -translate-x-[50%] -z-20 pointer-events-none">
                         <Spotlight size="568"></Spotlight>
                     </div>
                 </section>
