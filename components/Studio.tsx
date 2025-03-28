@@ -27,33 +27,51 @@ export default function Studio() {
 
     const studio = [
         {
-            title: "Dubai Recap 2024",
-            img: "Dubai_Recap.png",
-            video: "https://www.youtube.com/embed/M32j3AjV8h0?si=2RZmwk5uiL-qsYjz",
-            categorie: "Advertisement Campaign",
-        },
-        {
-            title: "NYC Cybertruck w/Jackey",
-            img: "NYC_Cybertruck.png",
-            video: "https://www.youtube.com/embed/mQNt69NNfhA?si=YnJrfTQUhipeIoGK",
-            categorie: "Advertisement Campaign",
-        },
-        {
-            title: "IslandDao Recap",
-            img: "IslandDao.png",
-            video: "https://www.youtube.com/embed/0HWaXwpBurE?si=Bt1R3PfQ_tuXPGK3",
-            categorie: "Advertisement Campaign",
-        },
-        {
-            title: "MtnDao",
-            img: "Mtndao.png",
-            video: "https://www.youtube.com/embed/p0mQ1PKX1nQ?si=AgCrCgUJIGJJxflv",
-            categorie: "Advertisement Campaign",
-        },
-        {
-            title: "MagicEden Runes B-Roll",
+            title: "Magic Eden Off-Site | 2024",
             img: "Magic_Eden.png",
-            video: "https://www.youtube.com/embed/p0mQ1PKX1nQ?si=dIordFpa2TSA1wtS",
+            video: "https://www.youtube.com/embed/p0mQ1PKX1nQ?si=JFHDTJZOW-m9HmXt",
+            categorie: "Advertisement Campaign",
+        },
+        {
+            title: "Mad Lads x Backpack Party, Bangkok | 2024",
+            img: "MadLads_ Backpack_Party_Bangkok.png",
+            video: "https://www.youtube.com/embed/VEJRxkTwOkw?si=pADs59uvKwO72ha8",
+            categorie: "Advertisement Campaign",
+        },
+        {
+            title: "mtnDAO v7 | Week 1 Recap | Winter 2025",
+            img: "mtnDAO_v7_Week_1_Recap.png",
+            video: "https://www.youtube.com/embed/9IKwVHN6xfw?si=p0mU78UA41ANAA-3",
+            categorie: "Advertisement Campaign",
+        },
+        {
+            title: "IslandDAO v1, Crete | Recap #4 | 2024",
+            img: "islandDAO_v1_crete_week4.png",
+            video: "https://www.youtube.com/embed/0HWaXwpBurE?si=NseSZd6TDuKkzWem",
+            categorie: "Advertisement Campaign",
+        },
+        {
+            title: "Moonwalk | Hacker House, London | 2024",
+            img: "Moonwalk_HackerHouse_London.png",
+            video: "https://www.youtube.com/embed/R2LgORJWAog?si=6d4mf1i9dbMWeRQO",
+            categorie: "Advertisement Campaign",
+        },
+        {
+            title: "TidalDAO x Drift Mixer, Salt Lake City | 2025",
+            img: "tidalDAO_Drift.png",
+            video: "https://www.youtube.com/embed/kS5HRGcevlE?si=7mtgIffAoZj5dDyN",
+            categorie: "Advertisement Campaign",
+        },
+        {
+            title: "mtnDAO v7 | Week 4 Recap | Winter 2025",
+            img: "mtnDAO_v7_Week_4_Recap.png",
+            video: "https://www.youtube.com/embed/0woFt-Ua7Yo?si=aTpOtNZ4WMbsOOu1",
+            categorie: "Advertisement Campaign",
+        },
+        {
+            title: "Moonwalk | mtndao Hike, Salt Lake City | Summer 2024",
+            img: "Moonwalk_MtnDAO.png",
+            video: "https://www.youtube.com/embed/O-2hKYTifUg?si=ygO3uNqqVcqSBjAB",
             categorie: "Advertisement Campaign",
         },
     ];
@@ -77,10 +95,10 @@ export default function Studio() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="xl:col-start-3 xl:col-span-7 col-start-1 col-span-full text-center"
                 >
-                    As both advocates and challengers in the Web3 space, we
-                    combine strategic insight with creative execution to
-                    transform innovative projects into mainstream success
-                    stories.
+                    Want to ditch flat storytelling? We craft dynamic videos
+                    that grab attention and keep viewers engaged. Our expert
+                    team combines professional filming with seamless editing to
+                    showcase your project in the best light
                 </motion.h4>
             </div>
 
@@ -107,8 +125,8 @@ export default function Studio() {
                                     alt={`video_${i + 1}`}
                                 />
                             </SpotlightCard>
-                            <div className="flex flex-col justify-center items-center mt-[20px] gap-y-[5px]">
-                                <p className="text-[24px] lg:text-[31px] leading-[125%]">
+                            <div className="flex flex-col justify-center items-center mt-[20px] gap-y-[5px] text-center">
+                                <p className="text-[24px] lg:text-[31px] leading-[125%] tex">
                                     {item.title}
                                 </p>
                                 <h2>[{item.categorie}]</h2>
