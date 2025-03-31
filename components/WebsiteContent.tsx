@@ -7,7 +7,6 @@ import OurServices from "./OurServices";
 import CaseStudies from "./CaseStudies";
 import Landing from "./Landing";
 import Spotlight from "./Spotlight";
-import MarqueeSlider from "./MarqueeSlider";
 import Studio from "./Studio";
 
 export default function WebsiteContent() {
@@ -57,7 +56,7 @@ export default function WebsiteContent() {
                     </div>
                 </section>
 
-                <section className="pt-[240px] relative" id="Services">
+                <section className="pt-[240px] relative " id="CaseStudies">
                     <div className="flex flex-col items-center">
                         <Studio></Studio>
                     </div>
