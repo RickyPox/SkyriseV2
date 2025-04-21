@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hotjar/browser": "^1.0.9",
     "@next/third-parties": "^15.1.7",
     "framer-motion": "^11.3.23",
     "gsap": "^3.12.5",
