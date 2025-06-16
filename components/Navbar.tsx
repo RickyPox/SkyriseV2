@@ -7,7 +7,7 @@ export default function Navbar() {
     const [isHovered, setIsHovered] = useState(false);
     const [activeSection, setActiveSection] = useState<string>("");
 
-    useEffect(() => {
+    /*     useEffect(() => {
         let typingEffect: any;
         let index = -1;
         const word = "Coming Soon";
@@ -27,7 +27,7 @@ export default function Navbar() {
         }
 
         return () => clearInterval(typingEffect); // Cleanup on unmount or hover change
-    }, [isHovered]);
+    }, [isHovered]); */
 
     useEffect(() => {
         const handleScroll = () => {
@@ -36,10 +36,7 @@ export default function Navbar() {
             sections.forEach((section: any) => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                if (
-                    window.scrollY >= sectionTop - sectionHeight / 3 &&
-                    window.scrollY < sectionTop + sectionHeight
-                ) {
+                if (window.scrollY >= sectionTop - sectionHeight / 3 && window.scrollY < sectionTop + sectionHeight) {
                     setActiveSection(section.id);
                 }
             });
@@ -65,7 +62,8 @@ export default function Navbar() {
             <div className="xl:col-start-2 xl:col-span-9 lg:col-start-2 lg:col-span-6 col-span-full flex justify-between py-[20px]">
                 <Link href="#Home">
                     <h2 className="text-[#DAE8FA] flex justify-center lg:justify-start min-w-[220px]">
-                        SkyRise Labs /
+                        SKYRISE{" "}
+                        {/* Labs /
                         <span
                             className="text-[#606060] flex min-w-[110px]"
                             onMouseEnter={() => setIsHovered(true)}
@@ -73,29 +71,20 @@ export default function Navbar() {
                         >
                             {"\xa0"}
                             {text}
-                        </span>
+                        </span>*/}
                     </h2>
                 </Link>
                 <div className="lg:flex hidden">
                     {navigation.map((item, i) => (
-                        <div
-                            key={i}
-                            className="flex items-center justify-center"
-                        >
+                        <div key={i} className="flex items-center justify-center">
                             <Link href={item.href}>
                                 <h2
                                     className={`text-[#606060] hover:text-[#DAE8FA] hoverTransition ${
-                                        activeSection === item.id
-                                            ? "text-[#DAE8FA]"
-                                            : ""
+                                        activeSection === item.id ? "text-[#DAE8FA]" : ""
                                     }`}
                                 >
                                     {item.name}
-                                    {i < navigation.length - 1 && (
-                                        <span className="mx-2 text-[#606060]">
-                                            /
-                                        </span>
-                                    )}
+                                    {i < navigation.length - 1 && <span className="mx-2 text-[#606060]">/</span>}
                                 </h2>
                             </Link>
                         </div>
